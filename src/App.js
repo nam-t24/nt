@@ -6,14 +6,12 @@ import Resume from './components/Resume.js';
 function App() {
   return (
     
-    <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/nt" element={<Home/>} />
         <Route path="" element={<Home/>} />
-        <Route path={"/resume"} element={<Resume/>} />
+        <Route path="/resume" element={<Resume/>} />
       </Routes>
-    </Router>
   );
 }
 
