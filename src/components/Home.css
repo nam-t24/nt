@@ -20,18 +20,49 @@
   animation: float 4s ease-in-out infinite;
 }
 
-
-/* @media only screen and (min-width: 768px) {
-    #MenuItems {
-        gap: 5rem !important;
-    }
+.up {
+  transition: transform .7s ease-in-out;
+}
+.up:hover {
+  transform: rotate(360deg);
 }
 
-@media (min-width: 640px) and (max-width:768px){
-    #MenuItems {
-        gap: 3rem !important;
-    }
+.smallIcon {
+    width: 50px !important;
 }
-#MenuItems {
-    gap: 1.5rem !important;
-} */
+.largeIcon {
+  width: 80px !important;
+}
+.icons > img {
+  margin: 8px 12px;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px){
+  .smallIcon {
+    width: 40px !important;
+  }
+  .largeIcon {
+    width:70px !important;
+  }
+  .icons > img {
+    margin: 4px 8px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .smallIcon {
+    width: 30px !important;
+  }
+  .largeIcon {
+    width:50px !important;
+  }
+  .icons > img {
+    margin: 4px 8px;
+  }
+}
+.tech {
+  transition: transform .2s;
+}
+.tech:hover {
+  transform: scale(1.1);
+}

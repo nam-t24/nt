@@ -19,6 +19,14 @@ module.exports = {
         'PastelPink': '#E5989B',
         'Melon':'#FFB4A2',
         'Apricot' : '#FFCDB2',
+      }),
+      borderColor: theme => ({
+        'OldLavender': '#6D6875',
+        'DarkEnglishLavender': '#805E65',
+        'EnglishLavender': '#B5838D',
+        'PastelPink': '#E5989B',
+        'Melon':'#FFB4A2',
+        'Apricot' : '#FFCDB2',
       })
     },
   },
