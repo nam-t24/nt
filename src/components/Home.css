@@ -29,9 +29,11 @@
 
 .smallIcon {
     width: 50px !important;
+    height: 50px !important;
 }
 .largeIcon {
   width: 80px !important;
+  height: 50px !important;
 }
 .icons > img {
   margin: 8px 12px;
@@ -40,9 +42,11 @@
 @media only screen and (min-width: 640px) and (max-width: 768px){
   .smallIcon {
     width: 40px !important;
+    height: 40px !important;
   }
   .largeIcon {
     width:70px !important;
+    height: 40px !important;
   }
   .icons > img {
     margin: 4px 8px;
@@ -52,9 +56,11 @@
 @media only screen and (max-width: 640px){
   .smallIcon {
     width: 30px !important;
+    height: 30px !important;
   }
   .largeIcon {
     width:50px !important;
+    height: 30px !important;
   }
   .icons > img {
     margin: 4px 8px;
@@ -65,4 +71,39 @@
 }
 .tech:hover {
   transform: scale(1.1);
+}
+
+.project {
+  transition: transform .2s;
+}
+
+.project:hover {
+  transform: translatey(-6px);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes raise {
+  0% {
+    transform: translatey(0px);
+  }
+  30% {
+    transform: translatey(-4px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.socials > a:hover {
+  animation: raise 1s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.socials_left > a:hover {
+  animation: raise 1s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.copyright {
+  border-top-width: 1px;
 }

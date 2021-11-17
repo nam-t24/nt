@@ -4,6 +4,7 @@ import './Home.scss';
 import './Home.css';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
+import ProjectCard from './ProjectCard.js';
 import smoothscroll from 'smoothscroll-polyfill';
 import $ from 'jquery';
 import { HashLink as LinkHash } from 'react-router-hash-link';
@@ -22,7 +23,13 @@ import NextJS from '../images/icons/NextJs.png';
 import Rails from '../images/icons/rails.png';
 import Git from '../images/icons/git.png';
 import VSCode from '../images/icons/vscode.png';
-import Terminal from '../images/icons/terminal.jpg';
+import Terminal from '../images/icons/terminal.png';
+//project images
+import CookAlong from '../images/CookAlong.png';
+import Tobor from '../images/tobor.jpg';
+import Minos from '../images/Minos.png';
+import Blink from '../images/blink.png';
+import HackUTD from '../images/hackutd.png';
 
 
 smoothscroll.polyfill();
@@ -117,11 +124,11 @@ function Home(){
         <div className="min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex flex-col justify-center items-center content-center" onload = "typewrite()">
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             <div className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</div>
-            {/* typewriter section */}
+            {/* Typewriter Section */}
             <div className="md:text-2xl text-lg typewrite" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
                 <span class="wrap" ></span>
             </div>
-            {/* Socials section */}
+            {/* Socials Section */}
             <div id="socials" className = "socials lg:text-2xl md:text-xl text-lg md:my-4 my-1">
                 <a
                     href="https://github.com/nam-t24"
@@ -156,7 +163,7 @@ function Home(){
                 </a>
             </div>
         </div>
-        {/* about section */}
+        {/* About Section */}
         <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center">
             <div className="md:my-40 my-32 md:w-3/5 w-4/5 flex flex-col items-center justify-center">
                 <div id="about" className="md:text-4xl text-3xl my-4">Howdy!</div>
@@ -198,8 +205,9 @@ function Home(){
                 </div>
             </div>
         </div>
-        <div className="bg-white flex justify-center">
-            <div className="tech md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender hover:border-Melon flex flex-col items-center p-4">
+        {/* Tools and Technologies Section */}
+        <div className="tech bg-white flex justify-center mt-8 mb-32">
+            <div className=" md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender hover:border-Melon flex flex-col items-center p-4">
                 <div className="md:text-4xl text-3xl md:mb-4 mb-2">Tools and Technologies</div>
                 <div className="icons flex flex-wrap justify-center">
                     <img src={CPP} alt="c++" className="smallIcon"></img>
@@ -217,8 +225,51 @@ function Home(){
                     <img src={Git} alt="git" className="smallIcon"></img>
                     <img src={VSCode} alt="vscode" className="smallIcon"></img>
                     <img src={Terminal} alt="terminal" className="smallIcon"></img>
-
                 </div>
+            </div>
+        </div>
+        {/* Projects Section */}
+        <div id="projects" className="min-h-screen bg-Melon flex justify-center">
+            <div className="md:w-4/5 w-11/12 my-8">
+                <div className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Projects</div>
+                {/* Project Cards */}
+                <div className="w-full flex flex-wrap justify-center">
+                    <ProjectCard
+                        path="https://github.com/acm-projects/CookAlong"
+                        pic={CookAlong}
+                        title="CookAlong"
+                        description="Digital sous chef web application for ACM Projects Fall 2020. First place project winner"
+                    />
+                    <ProjectCard
+                        path="https://github.com/KendalUTD/GamerJamProject"
+                        pic={Tobor}
+                        title="Tobor's Treasure Troph"
+                        description="3D Puzzle and adventure game created through Unity for HackUTD GameJam 2020"
+                    />
+                    <ProjectCard
+                        path="https://github.com/KevinCai319/TAMUHacks2021"
+                        pic={Minos}
+                        title="Minos' Quest"
+                        description="Real-time multiplayer tile based labrynth game using Processing for TAMUHack 2021"
+                    />
+                    <ProjectCard
+                        path="https://github.com/zzeneric/Blink"
+                        pic={Blink}
+                        title="Blink"
+                        description="Real-time video conference platform that mimics an engaging classroom environment using integrated activities for HackDFW 2021"
+                    />
+                    <ProjectCard
+                        path="https://github.com/acmutd/hackportal-hackutd"
+                        pic={HackUTD}
+                        title="HackUTD VIII"
+                        description="Developed HackUTD VIII event site with a team of HackUTD technical officers for Fall HackUTD 2021"
+                    />
+                </div>
+            </div>
+        </div>
+        <div className="w-full bg-Melon flex justify-center">
+            <div className="copyright w-3/5 border-t-1 border-OldLavender text-center text-xs p-2">
+                © 2021 Nam Truong
             </div>
         </div>
         <Footer/>

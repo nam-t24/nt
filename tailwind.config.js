@@ -27,7 +27,14 @@ module.exports = {
         'PastelPink': '#E5989B',
         'Melon':'#FFB4A2',
         'Apricot' : '#FFCDB2',
-      })
+      }),
+      minHeight: {
+        '22rem': '22rem',
+        '1/2': '50%',
+      },
+      maxHeight: {
+        '1/2': '50%',
+      },
     },
   },
   variants: {},

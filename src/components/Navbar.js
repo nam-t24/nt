@@ -22,7 +22,7 @@ function Navbar(){
                 <LinkHash smooth={true} to="#about" className="MenuHover" scroll={el => scrollWithOffset(el)}>
                     About
                 </LinkHash>
-                <LinkHash smooth={true} to="#about" className="MenuHover md:mx-20 sm:mx-12 mx-6" scroll={el => scrollWithOffset(el)}>
+                <LinkHash smooth={true} to="#projects" className="MenuHover md:mx-20 sm:mx-12 mx-6">
                     Projects
                 </LinkHash>
                 <Link to="/resume" className="ResumeHover md:py-2 sm:py-1 md:px-4 px-2">

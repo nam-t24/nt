@@ -6,7 +6,7 @@ function Footer(){
 
     return(
         <div id="socials_bottom" className="socials_bottom fixed bottom-0 flex justify-between items-center w-full md:p-4 p-1">
-            <div className="">
+            <div className="socials_left flex lg:flex-row flex-col md:mx-0 mx-3">
                 <a
                     href="https://github.com/nam-t24"
                     target="_blank"
@@ -25,7 +25,7 @@ function Footer(){
                     data-toggle="tooltip"
                     data-placement="top"
                     title="namtruongcs"
-                    className = "md:mx-6 mx-2 lg:text-2xl md:text-xl text-lg"
+                    className = "lg:mx-6 lg:text-2xl md:text-xl text-lg"
                 >
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -44,7 +44,7 @@ function Footer(){
             <LinkHash 
                 to="#top"
                 smooth={true}
-                className="up lg:text-5xl text-3xl"
+                className="up lg:text-5xl text-3xl md:mx-0 mx-1"
             >
                 <i class="fa-regular fa-circle-up"></i>
             </LinkHash>
