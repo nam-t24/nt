@@ -1,0 +1,7 @@
+.resume {
+  transition: transform .2s;
+}
+
+.resume:hover {
+    transform: scale(1.1);
+}

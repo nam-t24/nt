@@ -208,7 +208,7 @@ function Home(){
         {/* Tools and Technologies Section */}
         <div className="tech bg-white flex justify-center mt-8 mb-32">
             <div className=" md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender hover:border-Melon flex flex-col items-center p-4">
-                <div className="md:text-4xl text-3xl md:mb-4 mb-2">Tools and Technologies</div>
+                <div className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</div>
                 <div className="icons flex flex-wrap justify-center">
                     <img src={CPP} alt="c++" className="smallIcon"></img>
                     <img src={Java} alt="java" className="smallIcon"></img>
