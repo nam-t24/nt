@@ -20,6 +20,7 @@ function Resume(){
 			        <img src={ResumeJPG} alt="Resume" className="resume mx-auto"/>
 		        </a>
             </div>
+            {/* Copyright footer */}
             <div className="w-full bg-EnglishLavender flex justify-center">
                 <div className="copyright w-3/5 border-t-1 border-OldLavender text-center text-xs p-2">
                     © 2021 Nam Truong

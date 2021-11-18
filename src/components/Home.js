@@ -57,7 +57,7 @@ function Home(){
         $("#socials_bottom").css("opacity", 0);
     });
 
-    //type writer
+    //typewriter
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -116,12 +116,13 @@ function Home(){
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
         document.body.appendChild(css);
     };
-
+    // End typewriter
     
 
     return(
         <>
         <Navbar/>
+        {/* Home screen for lg screens */}
         <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex-row items-center content-center">
             <div className="flex flex-col ml-16 w-1/2">
                 <h1 className="text-7xl my-6">Nam Truong</h1>
@@ -169,6 +170,7 @@ function Home(){
             </div>
 
         </div>
+        {/* Home screen for sm-md screens */}
         <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex flex-col justify-center items-center content-center" onload = "typewrite()">
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</h1>
@@ -315,6 +317,7 @@ function Home(){
                 </div>
             </div>
         </div>
+        {/* Copyright footer */}
         <div className="w-full bg-EnglishLavender flex justify-center">
             <div className="copyright w-3/5 border-t-1 border-OldLavender text-center text-xs p-2">
                 © 2021 Nam Truong

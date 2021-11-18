@@ -23,6 +23,7 @@
 .up {
   transition: transform .7s ease-in-out;
 }
+
 .up:hover {
   transform: rotate(360deg);
 }
@@ -31,10 +32,12 @@
     width: 50px !important;
     height: 50px !important;
 }
+
 .largeIcon {
   width: 80px !important;
   height: 50px !important;
 }
+
 .icons > img {
   margin: 8px 12px;
 }
@@ -108,15 +111,4 @@
 
 .copyright {
   border-top-width: 1px;
-}
-
-.fancy span {
-  opacity: 0 !important;
-  transition: all 1.5s ease !important;
-  display: inline-block !important;
-  transform: translateY(50px) !important;
-}
-.fancy span.fade {
-  opacity: 1 !important;
-  transform: translateY(0px) !important;
 }

@@ -2,10 +2,9 @@ import React from 'react';
 import HomeButton from '../images/N.png';
 import { Link } from "react-router-dom";
 import { HashLink as LinkHash } from 'react-router-hash-link';
-// md:gap-20 sm:gap-16 gap-6
+
 function Navbar(){
 
-    //scroll offset
     //scroll offset
     const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
