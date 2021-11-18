@@ -2,8 +2,36 @@ import React from 'react';
 import HomeButton from '../images/N.png';
 import { Link } from "react-router-dom";
 import { HashLink as LinkHash } from 'react-router-hash-link';
+import DeezNutz from '../sounds/DeezNuts.mp3';
+import Bruh from '../sounds/bruh.mp3';
+import Oof from '../sounds/oof.mp3';
+import Fart from '../sounds/fart.mp3';
 
 function Navbar(){
+
+    //play deez nutz audio on click
+    let audio = new Audio(DeezNutz)
+    const PlayDeezNuzt = () => {
+        audio.play()
+    }
+
+    //play bruh audio on click
+    let audio1 = new Audio(Bruh)
+    const PlayBruh = () => {
+        audio1.play()
+    }
+
+    //play oof audio on click
+    let audio2 = new Audio(Oof)
+    const PlayOof = () => {
+        audio2.play()
+    }
+
+    //play fart audio on click
+    let audio3 = new Audio(Fart)
+    const PlayFart = () => {
+        audio3.play()
+    }
 
     //scroll offset
     const scrollWithOffset = (el) => {

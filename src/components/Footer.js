@@ -2,10 +2,12 @@ import React from 'react';
 import { HashLink as LinkHash } from 'react-router-hash-link';
 import './Home.css';
 import Elevator from '../sounds/ElevatorDing.mp3';
+import Goteem from '../sounds/goteem.mp3';
 function Footer(){
 
-    let audio = new Audio(Elevator)
-    const start = () => {
+    //Play goteem audio on clik
+    let audio = new Audio(Goteem)
+    const PlayGottem = () => {
         audio.play()
     }
 
@@ -50,7 +52,6 @@ function Footer(){
                 to="#top"
                 smooth={true}
                 className="up lg:text-5xl text-3xl md:mx-0 mx-1"
-                onClick={start}
             >
                 <i class="fa-regular fa-circle-up"></i>
             </LinkHash>
