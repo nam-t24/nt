@@ -113,17 +113,65 @@ function Home(){
 
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
         document.body.appendChild(css);
     };
+
     
 
     return(
         <>
         <Navbar/>
-        <div className="min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex flex-col justify-center items-center content-center" onload = "typewrite()">
+        <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex-row items-center content-center">
+            <div className="flex flex-col ml-16 w-1/2">
+                <h1 className="text-7xl my-6">Nam Truong</h1>
+                {/* Typewriter Section */}
+                <div className="text-3xl typewrite" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
+                    <span class="wrap" ></span>
+                </div>
+                {/* Socials Section */}
+                <div id="socials" className = "socials text-4xl my-6">
+                    <a
+                        href="https://github.com/nam-t24"
+                        target="_blank"
+                        rel="noreferrer"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="nam-t24"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/namtruongcs/"
+                        target="_blank"
+                        rel="noreferrer"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="namtruongcs"
+                        className = "mx-6"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a 
+                        href="mailto:namtruong831@gmail.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="namtruong831@gmail.com"
+                    >
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img alt="ProfilePicture" src={PFP} className = "PFP w-64 border-2 border-white"/>
+            </div>
+
+        </div>
+        <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex flex-col justify-center items-center content-center" onload = "typewrite()">
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
-            <div className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</div>
+            <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</h1>
             {/* Typewriter Section */}
             <div className="md:text-2xl text-lg typewrite" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
                 <span class="wrap" ></span>
@@ -166,7 +214,7 @@ function Home(){
         {/* About Section */}
         <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center">
             <div className="md:my-40 my-32 md:w-3/5 w-4/5 flex flex-col items-center justify-center">
-                <div id="about" className="md:text-4xl text-3xl my-4">Howdy!</div>
+                <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                 <div>
                     <p3 className="lg:text-lg md:text-md text-sm">
                         My name is Nam Truong and I am a second year from the University of Texas
@@ -206,9 +254,9 @@ function Home(){
             </div>
         </div>
         {/* Tools and Technologies Section */}
-        <div className="tech bg-white flex justify-center mt-8 mb-32">
-            <div className=" md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender hover:border-Melon flex flex-col items-center p-4">
-                <div className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</div>
+        <div className="bg-white flex justify-center mt-8 mb-32">
+            <div className=" md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender flex flex-col items-center p-4">
+                <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
                 <div className="icons flex flex-wrap justify-center">
                     <img src={CPP} alt="c++" className="smallIcon"></img>
                     <img src={Java} alt="java" className="smallIcon"></img>
@@ -229,9 +277,9 @@ function Home(){
             </div>
         </div>
         {/* Projects Section */}
-        <div id="projects" className="min-h-screen bg-Melon flex justify-center">
+        <div id="projects" className="min-h-screen bg-EnglishLavender flex justify-center">
             <div className="md:w-4/5 w-11/12 my-8">
-                <div className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Projects</div>
+                <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Projects</h1>
                 {/* Project Cards */}
                 <div className="w-full flex flex-wrap justify-center">
                     <ProjectCard
@@ -267,7 +315,7 @@ function Home(){
                 </div>
             </div>
         </div>
-        <div className="w-full bg-Melon flex justify-center">
+        <div className="w-full bg-EnglishLavender flex justify-center">
             <div className="copyright w-3/5 border-t-1 border-OldLavender text-center text-xs p-2">
                 © 2021 Nam Truong
             </div>

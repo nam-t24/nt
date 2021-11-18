@@ -1,8 +1,13 @@
 import React from 'react';
 import { HashLink as LinkHash } from 'react-router-hash-link';
 import './Home.css';
-
+import Elevator from '../sounds/ElevatorDing.mp3';
 function Footer(){
+
+    let audio = new Audio(Elevator)
+    const start = () => {
+        audio.play()
+    }
 
     return(
         <div id="socials_bottom" className="socials_bottom fixed bottom-0 flex justify-between items-center w-full md:p-4 p-1">
@@ -45,6 +50,7 @@ function Footer(){
                 to="#top"
                 smooth={true}
                 className="up lg:text-5xl text-3xl md:mx-0 mx-1"
+                onClick={start}
             >
                 <i class="fa-regular fa-circle-up"></i>
             </LinkHash>
