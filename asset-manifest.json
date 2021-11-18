@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nt/static/css/main.e8b361ea.chunk.css",
-    "main.js": "/nt/static/js/main.5fae3a24.chunk.js",
-    "main.js.map": "/nt/static/js/main.5fae3a24.chunk.js.map",
+    "main.js": "/nt/static/js/main.718d5dd3.chunk.js",
+    "main.js.map": "/nt/static/js/main.718d5dd3.chunk.js.map",
     "runtime-main.js": "/nt/static/js/runtime-main.c89dc5a7.js",
     "runtime-main.js.map": "/nt/static/js/runtime-main.c89dc5a7.js.map",
     "static/js/2.05e3b584.chunk.js": "/nt/static/js/2.05e3b584.chunk.js",
@@ -13,21 +13,27 @@
     "static/css/main.e8b361ea.chunk.css.map": "/nt/static/css/main.e8b361ea.chunk.css.map",
     "static/js/2.05e3b584.chunk.js.LICENSE.txt": "/nt/static/js/2.05e3b584.chunk.js.LICENSE.txt",
     "static/media/CookAlong.68fa7a65.png": "/nt/static/media/CookAlong.68fa7a65.png",
+    "static/media/DeezNuts.498ce8c8.mp3": "/nt/static/media/DeezNuts.498ce8c8.mp3",
     "static/media/ElevatorDing.a8bce827.mp3": "/nt/static/media/ElevatorDing.a8bce827.mp3",
     "static/media/Minos.f02888c0.png": "/nt/static/media/Minos.f02888c0.png",
     "static/media/N.222b5199.png": "/nt/static/media/N.222b5199.png",
     "static/media/NamTruong_Resume.b2e55f2a.jpg": "/nt/static/media/NamTruong_Resume.b2e55f2a.jpg",
     "static/media/NamTruong_Resume.bc578698.pdf": "/nt/static/media/NamTruong_Resume.bc578698.pdf",
     "static/media/blink.bf081828.png": "/nt/static/media/blink.bf081828.png",
+    "static/media/bruh.22df6c99.mp3": "/nt/static/media/bruh.22df6c99.mp3",
     "static/media/c++.6e731ebc.svg": "/nt/static/media/c++.6e731ebc.svg",
     "static/media/css.f6d3aaa3.png": "/nt/static/media/css.f6d3aaa3.png",
+    "static/media/fart.6a33e4ff.mp3": "/nt/static/media/fart.6a33e4ff.mp3",
+    "static/media/goteem.e919f265.mp3": "/nt/static/media/goteem.e919f265.mp3",
     "static/media/hackutd.8bbd157f.png": "/nt/static/media/hackutd.8bbd157f.png",
     "static/media/html.8b111011.dms": "/nt/static/media/html.8b111011.dms",
     "static/media/java.fdabd4e1.png": "/nt/static/media/java.fdabd4e1.png",
     "static/media/javascript.2e10b2a2.png": "/nt/static/media/javascript.2e10b2a2.png",
+    "static/media/oof.ece77fe5.mp3": "/nt/static/media/oof.ece77fe5.mp3",
     "static/media/pfp.d95fe5f3.jpg": "/nt/static/media/pfp.d95fe5f3.jpg",
     "static/media/rails.5cfa93ed.png": "/nt/static/media/rails.5cfa93ed.png",
     "static/media/react.e67fc797.png": "/nt/static/media/react.e67fc797.png",
+    "static/media/roblox.5fa9f287.mp3": "/nt/static/media/roblox.5fa9f287.mp3",
     "static/media/ruby.0b422d19.png": "/nt/static/media/ruby.0b422d19.png",
     "static/media/sql.664a0ec2.png": "/nt/static/media/sql.664a0ec2.png",
     "static/media/tailwind.2bf831e6.jpg": "/nt/static/media/tailwind.2bf831e6.jpg",
@@ -40,6 +46,6 @@
     "static/js/runtime-main.c89dc5a7.js",
     "static/js/2.05e3b584.chunk.js",
     "static/css/main.e8b361ea.chunk.css",
-    "static/js/main.5fae3a24.chunk.js"
+    "static/js/main.718d5dd3.chunk.js"
   ]
 }
