@@ -112,3 +112,33 @@
 .copyright {
   border-top-width: 1px;
 }
+
+/*Blinking typewriter effect*/
+@-webkit-keyframes typeBlink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes typeBlink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.typeBlink{
+  border-right: 0.08em solid #000;
+}
+
+.typeBlink {
+  -webkit-animation: typeBlink 1s step-end infinite;
+  animation: typeBlink 1s step-end infinite;
+}

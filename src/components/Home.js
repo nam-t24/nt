@@ -7,7 +7,6 @@ import Footer from './Footer.js';
 import ProjectCard from './ProjectCard.js';
 import smoothscroll from 'smoothscroll-polyfill';
 import $ from 'jquery';
-import { HashLink as LinkHash } from 'react-router-hash-link';
 //icons
 import CPP from '../images/icons/c++.svg';
 import Java from '../images/icons/java.png';
@@ -30,7 +29,6 @@ import Tobor from '../images/tobor.jpg';
 import Minos from '../images/Minos.png';
 import Blink from '../images/blink.png';
 import HackUTD from '../images/hackutd.png';
-
 
 smoothscroll.polyfill();
 function Home(){
@@ -82,6 +80,7 @@ function Home(){
 
         var that = this;
         // var delta = 200 - Math.random() * 100;
+        // Speed of typing animation
         var delta = 80;
 
         if (this.isDeleting) { delta /= 2; }
@@ -111,10 +110,6 @@ function Home(){
             }
         }
 
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
-        document.body.appendChild(css);
     };
     // End typewriter
     
@@ -127,9 +122,13 @@ function Home(){
             <div className="flex flex-col ml-16 w-1/2">
                 <h1 className="text-7xl my-6">Nam Truong</h1>
                 {/* Typewriter Section */}
-                <div className="text-3xl typewrite" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
-                    <span class="wrap" ></span>
-                </div>
+                <p>
+                    <span
+                        data-period="1500"
+                        className="typewrite typeBlink text-3xl"
+                        data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'
+                    ></span>
+                </p>
                 {/* Socials Section */}
                 <div id="socials" className = "socials text-4xl my-6">
                     <a
@@ -175,7 +174,7 @@ function Home(){
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</h1>
             {/* Typewriter Section */}
-            <div className="md:text-2xl text-lg typewrite" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
+            <div className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
                 <span class="wrap" ></span>
             </div>
             {/* Socials Section */}
@@ -219,12 +218,10 @@ function Home(){
                 <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                 <div>
                     <p3 className="lg:text-lg md:text-md text-sm">
-                        My name is Nam Truong and I am a second year from the University of Texas
+                        My name is Nam Truong and I am a second year student from the University of Texas
                         at Dallas studying computer science. I created this site to not only
                         highlight my work and accomplishments but to exhibit my growth and
-                        development within computer science. Through my academic work, projects,
-                        and self interests, I have learned java, c++, ruby, and javascript as
-                        well as using git for version control.
+                        development within computer science.
                         <br />
                         <br />
                         Currently, I am involved in the{" "}
@@ -242,10 +239,9 @@ function Home(){
                         division. After participating in my first hackathon, I became a
                         technical officer for HackUTD to help organize and enrich the experience
                         of the many new students who decide to partake in HackUTD in the future.
-                        Additionally, I am involved in the UTD powerlifting team.
                         <br />
                         <br />
-                        When I'm not coding or learning, I enjoy weight training, playing guitar,
+                        When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
                         testing my typing speed on{" "}
                         <a href="https://typings.gg/" className="underline" target="-blank">
                           typings.gg
