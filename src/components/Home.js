@@ -28,7 +28,8 @@ import CookAlong from '../images/CookAlong.png';
 import Tobor from '../images/tobor.jpg';
 import Minos from '../images/Minos.png';
 import Blink from '../images/blink.png';
-import HackUTD from '../images/hackutd.png';
+import HackUTDVIII from '../images/hackutdVIII.png';
+import HackUTDVII from '../images/hackutdVII.png';
 
 smoothscroll.polyfill();
 function Home(){
@@ -299,6 +300,12 @@ function Home(){
                         description="Real-time multiplayer tile based labrynth game using Processing for TAMUHack 2021"
                     />
                     <ProjectCard
+                        path="https://github.com/acmutd/hackutd-vii-site"
+                        pic={HackUTDVII}
+                        title="HackUTD VII"
+                        description="Developed HackUTD VII event site with a team of HackUTD technical officers for Spring HackUTD 2021"
+                    />
+                    <ProjectCard
                         path="https://github.com/zzeneric/Blink"
                         pic={Blink}
                         title="Blink"
@@ -306,7 +313,7 @@ function Home(){
                     />
                     <ProjectCard
                         path="https://github.com/acmutd/hackportal-hackutd"
-                        pic={HackUTD}
+                        pic={HackUTDVIII}
                         title="HackUTD VIII"
                         description="Developed HackUTD VIII event site with a team of HackUTD technical officers for Fall HackUTD 2021"
                     />
