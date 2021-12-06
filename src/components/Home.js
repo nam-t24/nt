@@ -114,14 +114,14 @@ function Home(){
     };
     // End typewriter
     
-
+    
     return(
         <>
         <Navbar/>
         {/* Home screen for lg screens */}
         <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex-row items-center content-center">
             <div className="flex flex-col ml-16 w-1/2">
-                <h1 className="text-7xl my-6">Nam Truong</h1>
+                <h1 className="text-7xl my-6 fadein">Nam Truong</h1>
                 {/* Typewriter Section */}
                 <p>
                     <span
@@ -175,9 +175,11 @@ function Home(){
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</h1>
             {/* Typewriter Section */}
-            <div className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
-                <span class="wrap" ></span>
-            </div>
+            <p>
+            <span className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
+                
+            </span>
+            </p>
             {/* Socials Section */}
             <div id="socials" className = "socials lg:text-2xl md:text-xl text-lg md:my-4 my-1">
                 <a

@@ -35,6 +35,9 @@ module.exports = {
       maxHeight: {
         '1/2': '50%',
       },
+      padding: {
+        '18px': '18px',
+      },
     },
   },
   variants: {},
