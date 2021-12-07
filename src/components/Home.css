@@ -80,12 +80,15 @@
 
 .project {
   transition: transform .2s;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .project:hover {
   transform: translatey(-6px);
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 1);
 }
+
 
 @keyframes raise {
   0% {

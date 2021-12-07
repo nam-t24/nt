@@ -49,8 +49,15 @@ function Home(){
 
             //tools and tech
             var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
-            console.log(distance);
             $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
+
+            //project
+            var projectList = document.querySelectorAll(".project");
+
+            for(const project of projectList){
+                var projectDistance = Math.pow(project.getBoundingClientRect().top, 1.5);
+                project.style.opacity = (1 - projectDistance/6500 + 0.99);
+            }
         });
     });
 
@@ -120,9 +127,6 @@ function Home(){
     };
     // End typewriter
     
-    
-
-
     return(
         <>
         <Navbar/>
@@ -296,36 +300,42 @@ function Home(){
                         pic={CookAlong}
                         title="CookAlong"
                         description="Digital sous chef web application for ACM Projects Fall 2020. First place project winner"
+                        className = "project"
                     />
                     <ProjectCard
                         path="https://github.com/KendalUTD/GamerJamProject"
                         pic={Tobor}
                         title="Tobor's Treasure Troph"
                         description="3D Puzzle and adventure game created through Unity for HackUTD GameJam 2020"
+                        className = "project"
                     />
                     <ProjectCard
                         path="https://github.com/KevinCai319/TAMUHacks2021"
                         pic={Minos}
                         title="Minos' Quest"
                         description="Real-time multiplayer tile based labrynth game using Processing for TAMUHack 2021"
+                        className = "project"
                     />
                     <ProjectCard
                         path="https://github.com/acmutd/hackutd-vii-site"
                         pic={HackUTDVII}
                         title="HackUTD VII"
                         description="Developed HackUTD VII event site with a team of HackUTD technical officers for Spring HackUTD 2021"
+                        className = "project"
                     />
                     <ProjectCard
                         path="https://github.com/zzeneric/Blink"
                         pic={Blink}
                         title="Blink"
                         description="Real-time video conference platform that mimics an engaging classroom environment using integrated activities for HackDFW 2021"
+                        className = "project"
                     />
                     <ProjectCard
                         path="https://github.com/acmutd/hackportal-hackutd"
                         pic={HackUTDVIII}
                         title="HackUTD VIII"
                         description="Developed HackUTD VIII event site with a team of HackUTD technical officers for Fall HackUTD 2021"
+                        className = "project"
                     />
                 </div>
             </div>
