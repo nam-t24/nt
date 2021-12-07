@@ -44,7 +44,13 @@ function Home(){
     //fade in
     $(document).ready(function(){
         $(window).scroll(function(){
+            //bottom socials
             $("#socials_bottom").css("opacity", $(window).scrollTop() / (250));
+
+            //tools and tech
+            var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
+            console.log(distance);
+            $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
         });
     });
 
@@ -115,13 +121,15 @@ function Home(){
     // End typewriter
     
     
+
+
     return(
         <>
         <Navbar/>
         {/* Home screen for lg screens */}
         <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex-row items-center content-center">
             <div className="flex flex-col ml-16 w-1/2">
-                <h1 className="text-7xl my-6 fadein">Nam Truong</h1>
+                <h1 id = "fadein" className="text-7xl my-6 fadein">Nam Truong</h1>
                 {/* Typewriter Section */}
                 <p>
                     <span
@@ -256,7 +264,7 @@ function Home(){
         </div>
         {/* Tools and Technologies Section */}
         <div className="bg-white flex justify-center mt-8 mb-32">
-            <div className=" md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender flex flex-col items-center p-4">
+            <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender flex flex-col items-center p-4">
                 <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
                 <div className="icons flex flex-wrap justify-center">
                     <img src={CPP} alt="c++" className="smallIcon"></img>
