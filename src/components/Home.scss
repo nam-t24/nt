@@ -98,3 +98,24 @@
     }
   }
 }
+
+.timelineLink {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  color: black;
+  overflow: hidden;
+  background: linear-gradient(to right, white, white 50%, black 50%);
+  padding-left: 2px;
+  padding-right: 2px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+  &:hover {
+    background-position: 0 100%;
+  }
+}

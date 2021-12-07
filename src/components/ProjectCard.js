@@ -4,15 +4,6 @@ import $ from 'jquery';
 
 function ProjectCard(props){
 
-    //fade in
-    // $(document).ready(function(){
-    //     $(window).scroll(function(){
-    //         var distance = $('#project').offset().top - $(window).scrollTop();
-    //         console.log(distance);
-    //         $("#project").css("opacity", 1 - distance/325 + 0.9);
-    //     });
-    // });
-
     return(
         <a href={props.path} target="_blank" rel="noreferrer">
             <div id = "project" className="project flex flex-col rounded-md w-72 min-h-22rem lg:my-4 my-2 lg:mx-4 mx-2">

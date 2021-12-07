@@ -1,0 +1,4 @@
+.timelinePage {
+    background: rgb(109,104,117);
+    background: linear-gradient(45deg, rgba(109,104,117,1) 0%, rgba(229,152,155,1) 43%, rgba(255,205,178,1) 100%);
+}

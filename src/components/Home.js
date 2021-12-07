@@ -6,6 +6,7 @@ import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 import ProjectCard from './ProjectCard.js';
 import smoothscroll from 'smoothscroll-polyfill';
+import { Link } from "react-router-dom";
 import $ from 'jquery';
 //icons
 import CPP from '../images/icons/c++.svg';
@@ -48,8 +49,12 @@ function Home(){
             $("#socials_bottom").css("opacity", $(window).scrollTop() / (250));
 
             //tools and tech
-            var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
-            $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
+            if($('#toolsNtech').length){
+                //checks that the div has been loaded and is present
+                var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
+                $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
+                console.log("EXIST!!!!!")
+            }
 
             //project
             var projectList = document.querySelectorAll(".project");
@@ -290,7 +295,7 @@ function Home(){
             </div>
         </div>
         {/* Projects Section */}
-        <div id="projects" className="min-h-screen bg-EnglishLavender flex justify-center">
+        <div id="projects" className="min-h-screen bg-EnglishLavender flex flex-col justify-center items-center">
             <div className="md:w-4/5 w-11/12 my-8">
                 <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Projects</h1>
                 {/* Project Cards */}
@@ -338,8 +343,17 @@ function Home(){
                         className = "project"
                     />
                 </div>
+                <div className="md:text-3xl text-2xl mt-4 mb-2 text-center">Other Projects</div>
+                <div className = "flex justify-center">
+                    <Link to="/projecttimeline" className="md:text-lg text-md text-center">
+                        <p className = "timelineLink md:pb-3 pb-4">view the timeline</p>
+                    </Link>
+                </div>
             </div>
+            
+            
         </div>
+        
         {/* Copyright footer */}
         <div className="w-full bg-EnglishLavender flex justify-center">
             <div className="copyright w-3/5 border-t-1 border-OldLavender text-center text-xs p-2">
