@@ -49,12 +49,11 @@ function Home(){
             $("#socials_bottom").css("opacity", $(window).scrollTop() / (250));
 
             //tools and tech
-            if($('#toolsNtech').length){
-                //checks that the div has been loaded and is present
-                var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
-                $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
-                console.log("EXIST!!!!!")
-            }
+            // if($('#toolsNtech').length){
+            //     //checks that the div has been loaded and is present
+            //     var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
+            //     $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
+            // }
 
             //project
             var projectList = document.querySelectorAll(".project");
@@ -144,7 +143,7 @@ function Home(){
                     <span
                         data-period="1500"
                         className="typewrite typeBlink text-3xl"
-                        data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'
+                        data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern @ StateFarm","Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'
                     ></span>
                 </p>
                 {/* Socials Section */}
@@ -156,6 +155,7 @@ function Home(){
                         data-toggle="tooltip"
                         data-placement="bottom"
                         title="nam-t24"
+                        className = "socialIcon"
                     >
                         <i class="fab fa-github"></i>
                     </a>
@@ -166,7 +166,7 @@ function Home(){
                         data-toggle="tooltip"
                         data-placement="bottom"
                         title="namtruongcs"
-                        className = "mx-6"
+                        className = "socialIcon mx-6"
                     >
                         <i class="fab fa-linkedin"></i>
                     </a>
@@ -177,6 +177,7 @@ function Home(){
                         data-toggle="tooltip"
                         data-placement="bottom"
                         title="namtruong831@gmail.com"
+                        className = "socialIcon"
                     >
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -233,8 +234,11 @@ function Home(){
             </div>
         </div>
         {/* About Section */}
-        <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center">
-            <div className="md:my-40 my-32 md:w-3/5 w-4/5 flex flex-col items-center justify-center">
+        {/* <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center"> */}
+        <div className = "about">
+        <div className="flex justify-center">
+            <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3">
+                {/* md:my-40 my-32 */}
                 <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                 <div>
                     <p3 className="lg:text-lg md:text-md text-sm">
@@ -272,8 +276,8 @@ function Home(){
             </div>
         </div>
         {/* Tools and Technologies Section */}
-        <div className="bg-white flex justify-center mt-8 mb-32">
-            <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 rounded-lg border-OldLavender flex flex-col items-center p-4">
+        <div className="flex justify-center mt-8 ">
+            <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4">
                 <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
                 <div className="icons flex flex-wrap justify-center">
                     <img src={CPP} alt="c++" className="smallIcon"></img>
@@ -293,6 +297,7 @@ function Home(){
                     <img src={Terminal} alt="terminal" className="smallIcon"></img>
                 </div>
             </div>
+        </div>
         </div>
         {/* Projects Section */}
         <div id="projects" className="min-h-screen bg-EnglishLavender flex flex-col justify-center items-center">
