@@ -5,7 +5,6 @@ import { HashLink as LinkHash } from 'react-router-hash-link';
 
 function Navbar(){
 
-
     //scroll offset
     const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;

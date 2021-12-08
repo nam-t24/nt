@@ -3,7 +3,6 @@ import HomeButton from '../images/N.png';
 import { Link } from "react-router-dom";
 import { HashLink as LinkHash } from 'react-router-hash-link';
 
-
 //FAIL: DO NOT IMPLEMENT
 
 function ModernNavbar(){

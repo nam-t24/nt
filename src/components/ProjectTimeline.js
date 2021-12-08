@@ -7,17 +7,13 @@ import $ from 'jquery';
 
 function ProjectTimeline(){
 
-    $(window).on('beforeunload', function() {
-        $(window).scrollTop(0);
-    });
-
     return(
         <>
           <div className = "timelinePage min-h-screen">
             <div className="p-4 flex items-center">
-                <Link to="/" className = "sm:ml-16 ml-6">
-                  <img alt="HomeButton" src={HomeButton} className = "sm:w-12 w-10"/>
-                </Link>
+              <Link to="/" className = "sm:ml-16 ml-6">
+                <img alt="HomeButton" src={HomeButton} className = "sm:w-12 w-10"/>
+              </Link>
             </div>
             <div className = "flex justify-center">
               <div className="container lg:max-w-2/5">
@@ -280,6 +276,41 @@ function ProjectTimeline(){
                   </ul>
                 </div>
               </div> 
+              
+            </div>
+            {/* Socials Section */}
+            <div className = "text-3xl pb-4 z-50 flex justify-center">
+              <a
+                href="https://github.com/nam-t24"
+                target="_blank"
+                rel="noreferrer"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="nam-t24"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/namtruongcs/"
+                target="_blank"
+                rel="noreferrer"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="namtruongcs"
+                className = "mx-6"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a 
+                href="mailto:namtruong831@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="namtruong831@gmail.com"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
             </div>
           </div>
         </>
