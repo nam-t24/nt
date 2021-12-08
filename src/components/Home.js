@@ -1,7 +1,7 @@
 import React from "react";
 import PFP from '../images/pfp.jpg';
-import './Home.scss';
-import './Home.css';
+import './css/Home.scss';
+import './css/Home.css';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 import ProjectCard from './ProjectCard.js';
@@ -350,8 +350,6 @@ function Home(){
                     </Link>
                 </div>
             </div>
-            
-            
         </div>
         
         {/* Copyright footer */}

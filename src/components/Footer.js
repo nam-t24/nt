@@ -1,16 +1,8 @@
 import React from 'react';
 import { HashLink as LinkHash } from 'react-router-hash-link';
-import './Home.css';
-import Elevator from '../sounds/ElevatorDing.mp3';
-import Goteem from '../sounds/goteem.mp3';
+import './css/Home.css';
+
 function Footer(){
-
-    //Play goteem audio on clik
-    let audio = new Audio(Goteem)
-    const PlayGottem = () => {
-        audio.play()
-    }
-
     return(
         <div id="socials_bottom" className="socials_bottom fixed bottom-0 flex justify-between items-center w-full md:p-4 p-1">
             <div className="socials_left flex lg:flex-row flex-col md:mx-0 mx-3">

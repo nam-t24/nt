@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './css/Home.css';
 import $ from 'jquery';
 
 function ProjectCard(props){

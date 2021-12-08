@@ -102,10 +102,10 @@
 .timelineLink {
   position: relative;
   display: inline-block;
-  font-weight: 500;
-  color: black;
+  font-weight: 300;
+  color: rgb(35, 53, 84);
   overflow: hidden;
-  background: linear-gradient(to right, white, white 50%, black 50%);
+  background: linear-gradient(to right, rgb(204, 214, 246), rgb(204, 214, 246) 50%, rgb(35, 53, 84) 50%);
   padding-left: 2px;
   padding-right: 2px;
   background-clip: text;

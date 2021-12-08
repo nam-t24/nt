@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import HomeButton from '../images/N.png';
 import ResumeJPG from '../images/NamTruong_Resume.jpg';
 import ResumePDF from '../images/NamTruong_Resume.pdf';
-import './Resume.css';
+import './css/Resume.css';
 import Roblox from '../sounds/roblox.mp3';
 
 function Resume(){
