@@ -346,7 +346,7 @@ function Home(){
                 <div className="md:text-3xl text-2xl mt-4 mb-2 text-center">Other Projects</div>
                 <div className = "flex justify-center">
                     <Link to="/projecttimeline" className="md:text-lg text-md text-center">
-                        <p className = "timelineLink md:pb-3 pb-4">view the timeline</p>
+                        <p className = "timelineLink md:pb-3 pb-4">➣ view the timeline</p>
                     </Link>
                 </div>
             </div>
