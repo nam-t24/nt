@@ -3,7 +3,16 @@
 }
 
 .resume:hover {
-  -moz-box-shadow: 0 0 15px rgb(38, 57, 77);
+  /* -moz-box-shadow: 0 0 15px rgb(38, 57, 77);
   -webkit-box-shadow: 0 0 15px rgb(38, 57, 77);
-  box-shadow: 0px 0px 15px rgb(38, 57, 77);
+  box-shadow: 0px 0px 15px rgb(38, 57, 77); */
+  -moz-box-shadow: 0 0 15px rgb(210, 212, 214);
+  -webkit-box-shadow: 0 0 15px rgb(210, 212, 214);
+  box-shadow: 0px 0px 15px rgb(210, 212, 214);
+}
+
+.resumeSection {
+  background-image: url("../../images/greenbackdrop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

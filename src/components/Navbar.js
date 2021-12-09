@@ -13,7 +13,7 @@ function Navbar(){
     }
 
     return(
-        <div className = "bg-EnglishLavender flex justify-between items-center py-4">
+        <div className = "bg-HookersGreen flex justify-between items-center py-4">
             <Link to="/" className = "sm:ml-16 ml-6">
                 <img alt="HomeButton" src={HomeButton} className = "sm:w-12 w-10"/>
             </Link>

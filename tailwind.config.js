@@ -11,6 +11,12 @@ module.exports = {
         'PastelPink': '#E5989B',
         'Melon':'#FFB4A2',
         'Apricot' : '#FFCDB2',
+        //green theme
+        'Charcoal': '#2F3E46',
+        'DarkSlateGrey': '#354F52',
+        'HookersGreen': '#52796F',
+        'DarkSeaGreen': '#84A98C',
+        'AshGrey': '#CAD2C5',
       }),
        gradientColorStops: theme => ({
         'OldLavender': '#6D6875',
@@ -19,6 +25,12 @@ module.exports = {
         'PastelPink': '#E5989B',
         'Melon':'#FFB4A2',
         'Apricot' : '#FFCDB2',
+        //green theme
+        'Charcoal': '#2F3E46',
+        'DarkSlateGrey': '#354F52',
+        'HookersGreen': '#52796F',
+        'DarkSeaGreen': '#84A98C',
+        'AshGrey': '#CAD2C5',
       }),
       borderColor: theme => ({
         'OldLavender': '#6D6875',
@@ -27,6 +39,12 @@ module.exports = {
         'PastelPink': '#E5989B',
         'Melon':'#FFB4A2',
         'Apricot' : '#FFCDB2',
+        //green theme
+        'Charcoal': '#2F3E46',
+        'DarkSlateGrey': '#354F52',
+        'HookersGreen': '#52796F',
+        'DarkSeaGreen': '#84A98C',
+        'AshGrey': '#CAD2C5',
       }),
       minHeight: {
         '22rem': '22rem',

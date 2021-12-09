@@ -135,7 +135,7 @@ function Home(){
         <>
         <Navbar/>
         {/* Home screen for lg screens */}
-        <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex-row items-center content-center">
+        <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex-row items-center content-center">
             <div className="flex flex-col ml-16 w-1/2">
                 <h1 id = "fadein" className="text-7xl my-6 fadein">Nam Truong</h1>
                 {/* Typewriter Section */}
@@ -189,7 +189,7 @@ function Home(){
 
         </div>
         {/* Home screen for sm-md screens */}
-        <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-EnglishLavender to-PastelPink flex flex-col justify-center items-center content-center" onload = "typewrite()">
+        <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex flex-col justify-center items-center content-center" onload = "typewrite()">
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</h1>
             {/* Typewriter Section */}
@@ -236,71 +236,71 @@ function Home(){
         {/* About Section */}
         {/* <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center"> */}
         <div className = "about">
-        <div className="flex justify-center">
-            <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3">
-                {/* md:my-40 my-32 */}
-                <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
-                <div>
-                    <p3 className="lg:text-lg md:text-md text-sm">
-                        My name is Nam Truong and I am a second year student from the University of Texas
-                        at Dallas studying computer science. I created this site to not only
-                        highlight my work and accomplishments but to exhibit my growth and
-                        development within computer science.
-                        <br />
-                        <br />
-                        Currently, I am involved in the{" "}
-                        <a href="https://www.acmutd.co/index.html" className="underline" target="-blank">
-                          Association for Computing Machinery
-                        </a>
-                        , having participated in its{" "}
-                        <a href="https://www.acmutd.co/projects" className="underline" target="-blank">
-                          projects
-                        </a>{" "}
-                        division, and now part of the{" "}
-                        <a href="https://www.hackutd.co/" className="underline" target="-blank">
-                          HackUTD
-                        </a>{" "}
-                        division. After participating in my first hackathon, I became a
-                        technical officer for HackUTD to help organize and enrich the experience
-                        of the many new students who decide to partake in HackUTD in the future.
-                        <br />
-                        <br />
-                        When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
-                        testing my typing speed on{" "}
-                        <a href="https://typings.gg/" className="underline" target="-blank">
-                          typings.gg
-                        </a>
-                        , and eating mint chocolate chip ice cream :)
-                    </p3>
+            <div className="flex justify-center">
+                <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3">
+                    {/* md:my-40 my-32 */}
+                    <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
+                    <div>
+                        <p3 className="lg:text-lg md:text-md text-sm">
+                            My name is Nam Truong and I am a second year student from the University of Texas
+                            at Dallas studying computer science. I created this site to not only
+                            highlight my work and accomplishments but to exhibit my growth and
+                            development within computer science.
+                            <br />
+                            <br />
+                            Currently, I am involved in the{" "}
+                            <a href="https://www.acmutd.co/index.html" className="underline" target="-blank">
+                              Association for Computing Machinery
+                            </a>
+                            , having participated in its{" "}
+                            <a href="https://www.acmutd.co/projects" className="underline" target="-blank">
+                              projects
+                            </a>{" "}
+                            division, and now part of the{" "}
+                            <a href="https://www.hackutd.co/" className="underline" target="-blank">
+                              HackUTD
+                            </a>{" "}
+                            division. After participating in my first hackathon, I became a
+                            technical officer for HackUTD to help organize and enrich the experience
+                            of the many new students who decide to partake in HackUTD in the future.
+                            <br />
+                            <br />
+                            When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
+                            testing my typing speed on{" "}
+                            <a href="https://typings.gg/" className="underline" target="-blank">
+                              typings.gg
+                            </a>
+                            , and eating mint chocolate chip ice cream :)
+                        </p3>
+                    </div>
                 </div>
             </div>
-        </div>
-        {/* Tools and Technologies Section */}
-        <div className="flex justify-center mt-8 ">
-            <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4">
-                <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
-                <div className="icons flex flex-wrap justify-center">
-                    <img src={CPP} alt="c++" className="smallIcon"></img>
-                    <img src={Java} alt="java" className="smallIcon"></img>
-                    <img src={Ruby} alt="ruby" className="smallIcon"></img>
-                    <img src={JS} alt="javascript" className="smallIcon"></img>
-                    <img src={TS} alt="typescript" className="smallIcon"></img>
-                    <img src={HTML} alt="html" className="smallIcon"></img>
-                    <img src={CSS} alt="css" className="smallIcon"></img>
-                    <img src={Tailwind} alt="tailwindcss" className="largeIcon"></img>
-                    <img src={SQL} alt="sql" className="smallIcon"></img>
-                    <img src={react} alt="react" className="smallIcon"></img>
-                    <img src={NextJS} alt="nextjs" className="largeIcon"></img>
-                    <img src={Rails} alt="rubyonrails" className="largeIcon"></img>
-                    <img src={Git} alt="git" className="smallIcon"></img>
-                    <img src={VSCode} alt="vscode" className="smallIcon"></img>
-                    <img src={Terminal} alt="terminal" className="smallIcon"></img>
+            {/* Tools and Technologies Section */}
+            <div className="flex justify-center mt-8 ">
+                <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4">
+                    <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
+                    <div className="icons flex flex-wrap justify-center">
+                        <img src={CPP} alt="c++" className="smallIcon"></img>
+                        <img src={Java} alt="java" className="smallIcon"></img>
+                        <img src={Ruby} alt="ruby" className="smallIcon"></img>
+                        <img src={JS} alt="javascript" className="smallIcon"></img>
+                        <img src={TS} alt="typescript" className="smallIcon"></img>
+                        <img src={HTML} alt="html" className="smallIcon"></img>
+                        <img src={CSS} alt="css" className="smallIcon"></img>
+                        <img src={Tailwind} alt="tailwindcss" className="largeIcon"></img>
+                        <img src={SQL} alt="sql" className="smallIcon"></img>
+                        <img src={react} alt="react" className="smallIcon"></img>
+                        <img src={NextJS} alt="nextjs" className="largeIcon"></img>
+                        <img src={Rails} alt="rubyonrails" className="largeIcon"></img>
+                        <img src={Git} alt="git" className="smallIcon"></img>
+                        <img src={VSCode} alt="vscode" className="smallIcon"></img>
+                        <img src={Terminal} alt="terminal" className="smallIcon"></img>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         {/* Projects Section */}
-        <div id="projects" className="min-h-screen bg-EnglishLavender flex flex-col justify-center items-center">
+        <div id="projects" className="min-h-screen bg-DarkSeaGreen flex flex-col justify-center items-center">
             <div className="md:w-4/5 w-11/12 my-8">
                 <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Projects</h1>
                 {/* Project Cards */}
@@ -358,8 +358,8 @@ function Home(){
         </div>
         
         {/* Copyright footer */}
-        <div className="w-full bg-EnglishLavender flex justify-center">
-            <div className="copyright w-3/5 border-t-1 border-OldLavender text-center text-xs p-2">
+        <div className="w-full bg-DarkSeaGreen flex justify-center">
+            <div className="copyright w-3/5 border-t-1 border-Charcoal text-center text-xs p-2">
                 © 2021 Nam Truong
             </div>
         </div>
