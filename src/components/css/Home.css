@@ -159,8 +159,18 @@
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
+
+/* Removed for fixed background */
 .about {
+  /* background-image: url("../../images/backdrop2.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: transparent;
+}
+
+.absoluteBackground {
   background-image: url("../../images/backdrop2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1 !important;
 }

@@ -12,7 +12,7 @@ function Resume(){
             {/* Header */}
             <div className="p-4 flex items-center">
                 <Link to="/" className = "sm:ml-16 ml-6">
-                    <img alt="HomeButton" src={HomeButton} className = "sm:w-12 w-10"/>
+                    <img alt="HomeButton" src={HomeButton} className = "sm:w-10 w-8"/>
                 </Link>
             </div>
             {/* Resume */}

@@ -56,6 +56,9 @@ module.exports = {
       maxWidth: {
         '2/5': '50rem',
       },
+      minWidth: {
+        'screen': '100vw',
+      },
       padding: {
         '18px': '18px',
       },

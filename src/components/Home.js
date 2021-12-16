@@ -133,6 +133,7 @@ function Home(){
     
     return(
         <>
+        <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div>
         <Navbar/>
         {/* Home screen for lg screens */}
         <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex-row items-center content-center">

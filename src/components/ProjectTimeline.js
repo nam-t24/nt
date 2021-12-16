@@ -287,6 +287,7 @@ function ProjectTimeline(){
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="nam-t24"
+                className = "socialIcon"
               >
                 <i class="fab fa-github"></i>
               </a>
@@ -297,7 +298,7 @@ function ProjectTimeline(){
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="namtruongcs"
-                className = "mx-6"
+                className = "mx-6 socialIcon"
               >
                 <i class="fab fa-linkedin"></i>
               </a>
@@ -308,6 +309,7 @@ function ProjectTimeline(){
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="namtruong831@gmail.com"
+                className = "socialIcon"
               >
                 <i class="fas fa-envelope"></i>
               </a>
