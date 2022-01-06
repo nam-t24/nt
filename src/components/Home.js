@@ -8,6 +8,7 @@ import ProjectCard from './ProjectCard.js';
 import smoothscroll from 'smoothscroll-polyfill';
 import { Link } from "react-router-dom";
 import $ from 'jquery';
+import { useEffect } from "react";
 //icons
 import CPP from '../images/icons/c++.svg';
 import Java from '../images/icons/java.png';
@@ -34,6 +35,12 @@ import HackUTDVII from '../images/hackutdVII.png';
 
 smoothscroll.polyfill();
 function Home(){
+
+    //refresh on page load
+    useEffect(() => {
+        typewriter();
+        $("#socials_bottom").css("opacity", 0);
+    })
 
     //fade out
     $(document).ready(function(){
@@ -63,14 +70,6 @@ function Home(){
                 project.style.opacity = (1 - projectDistance/6500 + 0.99);
             }
         });
-    });
-
-    //reload page
-    $(document).ready(function(){
-        if(document.location.hash){
-            window.location = "";
-        }
-        $("#socials_bottom").css("opacity", 0);
     });
 
     //typewriter
@@ -117,7 +116,7 @@ function Home(){
         }, delta);
     };
 
-    window.onload = function() {
+    function typewriter() {
         var elements = document.getElementsByClassName('typewrite');
 
         for(const element of elements){
@@ -127,8 +126,7 @@ function Home(){
               new TxtType(element, JSON.parse(toRotate), period);
             }
         }
-
-    };
+    }
     // End typewriter
     
     return(
