@@ -1,4 +1,3 @@
-import React from "react";
 import PFP from '../images/pfp.jpg';
 import './css/Home.scss';
 import './css/Home.css';
@@ -9,6 +8,8 @@ import smoothscroll from 'smoothscroll-polyfill';
 import { Link } from "react-router-dom";
 import $ from 'jquery';
 import { useEffect } from "react";
+import 'animate.css';
+import WOW from 'wow.js';
 //icons
 import CPP from '../images/icons/c++.svg';
 import Java from '../images/icons/java.png';
@@ -40,7 +41,9 @@ function Home(){
     useEffect(() => {
         typewriter();
         $("#socials_bottom").css("opacity", 0);
+        new WOW().init();
     })
+
 
     //fade out
     $(document).ready(function(){
@@ -136,7 +139,7 @@ function Home(){
         {/* Home screen for lg screens */}
         <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex-row items-center content-center">
             <div className="flex flex-col ml-16 w-1/2">
-                <h1 id = "fadein" className="text-7xl my-6 fadein">Nam Truong</h1>
+                <h1 id = "fadein" className="text-7xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
                 {/* Typewriter Section */}
                 <p>
                     <span
@@ -146,7 +149,7 @@ function Home(){
                     ></span>
                 </p>
                 {/* Socials Section */}
-                <div id="socials" className = "socials text-4xl my-6">
+                <div id="socials" className = "socials text-4xl my-6 animate__animated animate__fadeInUp">
                     <a
                         href="https://github.com/nam-t24"
                         target="_blank"
@@ -182,15 +185,17 @@ function Home(){
                     </a>
                 </div>
             </div>
-            <div>
+            <div className='animate__animated animate__jackInTheBox'>
                 <img alt="ProfilePicture" src={PFP} className = "PFP w-64 border-2 border-white"/>
             </div>
 
         </div>
         {/* Home screen for sm-md screens */}
         <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex flex-col justify-center items-center content-center" onload = "typewrite()">
+            <div className='animate__animated animate__jackInTheBox'>
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
-            <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4">Nam Truong</h1>
+            </div>
+            <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4 animate__animated animate__zoomIn">Nam Truong</h1>
             {/* Typewriter Section */}
             <p>
             <span className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
@@ -236,7 +241,7 @@ function Home(){
         {/* <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center"> */}
         <div className = "about">
             <div className="flex justify-center">
-                <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3">
+                <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3 wow slideInLeft" data-wow-offset="100">
                     {/* md:my-40 my-32 */}
                     <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                     <div>
@@ -276,7 +281,7 @@ function Home(){
             </div>
             {/* Tools and Technologies Section */}
             <div className="flex justify-center mt-8 ">
-                <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4">
+                <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4 wow slideInRight" data-wow-offset="100">
                     <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
                     <div className="icons flex flex-wrap justify-center">
                         <img src={CPP} alt="c++" className="smallIcon"></img>
