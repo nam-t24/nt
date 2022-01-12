@@ -44,6 +44,7 @@ function Home(){
         new WOW().init();
     })
 
+    document.documentElement.style.setProperty('--animate-duration', '1.8s');
 
     //fade out
     $(document).ready(function(){

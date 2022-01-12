@@ -174,3 +174,8 @@
   background-size: cover;
   z-index: -1 !important;
 }
+
+.animate__animated {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.5s;
+}
