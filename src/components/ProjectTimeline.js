@@ -3,7 +3,6 @@ import './css/ProjectTimeline.css';
 import './css/ProjectTimeline.scss';
 import { Link } from "react-router-dom";
 import HomeButton from '../images/N.png';
-import $ from 'jquery';
 
 function ProjectTimeline(){
 
@@ -20,7 +19,7 @@ function ProjectTimeline(){
                 <div className="wrapper">
                   <h1 className = "title"> Project Timeline</h1>
                   <ul className="sessions">
-                    <li>
+                    <li className='list'>
                       <div className="time">2021 - currrent</div>
                       <div className="projectTitle">
                         HackPortal
@@ -41,7 +40,7 @@ function ProjectTimeline(){
                           Features hacker registration, log-in, qr code check-in, and hackathon information.
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         HackUTD VIII Website
@@ -59,7 +58,7 @@ function ProjectTimeline(){
                       </div>
                       <p className = "projectDesc">Event website for the 8th iteration of HackUTD, utilizing parts of HackPortal. Reached 800+ hackathon users and 1000+ applicants.</p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         Mind Reader Game - CS2340 Computer Architecture
@@ -79,7 +78,7 @@ function ProjectTimeline(){
                         Simple number guessing game built using MIPS. 
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         Blink - HackDFW
@@ -101,7 +100,7 @@ function ProjectTimeline(){
                         Aimed at bridging the gap between in-person and online classroom experiences.
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         AppAcademy Projects
@@ -121,7 +120,7 @@ function ProjectTimeline(){
                         Projects done for AppAcademy Open, an online full-stack bootcamp. Contains projects using Ruby, Ruby on Rails, SQL, PostgreSQL, SQLite, and more. 
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         Chess
@@ -141,7 +140,7 @@ function ProjectTimeline(){
                         Chess game built using Ruby. Features game saving through YAML, move assist, and cursor input through keyboard. 
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         Minesweeper
@@ -161,7 +160,7 @@ function ProjectTimeline(){
                         Minesweeper game built using Ruby. Features game saving through YAML.
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         Minos' Quest - TamuHack
@@ -181,7 +180,7 @@ function ProjectTimeline(){
                         Real-time multiplayer tile based labrynth game using Processing.
                       </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         HackUTD VII Website
@@ -199,7 +198,7 @@ function ProjectTimeline(){
                       </div>
                       <p className = "projectDesc">Event website for the 7th iteration of HackUTD. Used plain html, css, js. </p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2020</div>
                       <div className="projectTitle">
                         Typer
@@ -217,7 +216,7 @@ function ProjectTimeline(){
                       </div>
                       <p className = "projectDesc">Site to test typing speed using quotes API generator to generate text. Features light and pastel theme options. Used plain html, css, js.</p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2020</div>
                       <div className="projectTitle">
                         CookAlong - ACM Projects
@@ -237,7 +236,7 @@ function ProjectTimeline(){
                         Digital sous chef web application that allows users to search for recipes and to be guided through desired recipe hands free using text-speech and speech-text functionalities. 
                         Implemented web-speech API for speech functionalities. Won first place project.</p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2020</div>
                       <div className="projectTitle">
                         First Personal Site
@@ -255,7 +254,7 @@ function ProjectTimeline(){
                       </div>
                       <p className = "projectDesc">Very first site I've created. Purpose was to learn about web development and React.</p>
                     </li>
-                    <li>
+                    <li className='list'>
                       <div className="time">2020</div>
                       <div className="projectTitle">
                         Tobor's Treasure Troph - HackUTD GameJame

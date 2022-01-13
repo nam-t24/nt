@@ -179,3 +179,37 @@
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.5s;
 }
+
+.accordion {
+  color: #444;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgba(152, 211, 165, 0.6);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  /* + sign  */
+  content: '\02795';
+  font-size: 12px;
+  color: #777;
+  float: right;
+  /* margin-left: 5px; */
+}
+
+.active:after {
+  /* - sign */
+  content: "\2796"; 
+}

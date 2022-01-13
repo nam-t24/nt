@@ -11,7 +11,7 @@
     @media screen and (max-width: 600px) { @content; }
 }
 
-ul, li {
+ul.sessions, li.list {
     list-style: none;
     padding: 0;
 }
@@ -44,7 +44,7 @@ ul, li {
     position: relative;
 }
 
-li {
+li.list {
     padding-bottom: 1.5rem;
     border-left: 1px solid #abaaed;
     position: relative;

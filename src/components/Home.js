@@ -36,14 +36,14 @@ import HackUTDVII from '../images/hackutdVII.png';
 
 smoothscroll.polyfill();
 function Home(){
-
+    
     //refresh on page load
     useEffect(() => {
         typewriter();
         $("#socials_bottom").css("opacity", 0);
         new WOW().init();
     })
-
+    
     document.documentElement.style.setProperty('--animate-duration', '1.8s');
 
     //fade in/out
@@ -52,15 +52,6 @@ function Home(){
             $("#socials").css("opacity", 1 - $(window).scrollTop() / (500));
             $("#socials_bottom").css("opacity", $(window).scrollTop() / (250));
 
-            //project
-            // var projectList = document.querySelectorAll(".project");
-
-            // for(const project of projectList){
-            //     var projectDistance = Math.pow(project.getBoundingClientRect().top, 1.5);
-            //     project.style.opacity = (1 - projectDistance/6500 + 0.99);
-            //     project.classList.add("wow");
-            //     project.classList.add("flipInX");
-            // }
         });
     });
 
@@ -85,7 +76,7 @@ function Home(){
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        this.el.innerHTML = '<span className="wrap">'+this.txt+'</span>';
 
         var that = this;
         // var delta = 200 - Math.random() * 100;
@@ -120,7 +111,25 @@ function Home(){
         }
     }
     // End typewriter
-    
+
+    //accordion
+    window.onload = () => {
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    }
+
     return(
         <>
         <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div>
@@ -148,7 +157,7 @@ function Home(){
                         title="nam-t24"
                         className = "socialIcon"
                     >
-                        <i class="fab fa-github"></i>
+                        <i className="fab fa-github"></i>
                     </a>
                     <a 
                         href="https://www.linkedin.com/in/namtruongcs/"
@@ -159,7 +168,7 @@ function Home(){
                         title="namtruongcs"
                         className = "socialIcon mx-6"
                     >
-                        <i class="fab fa-linkedin"></i>
+                        <i className="fab fa-linkedin"></i>
                     </a>
                     <a 
                         href="mailto:namtruong831@gmail.com"
@@ -170,7 +179,7 @@ function Home(){
                         title="namtruong831@gmail.com"
                         className = "socialIcon"
                     >
-                        <i class="fas fa-envelope"></i>
+                        <i className="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
@@ -180,7 +189,7 @@ function Home(){
 
         </div>
         {/* Home screen for sm-md screens */}
-        <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex flex-col justify-center items-center content-center" onload = "typewrite()">
+        <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex flex-col justify-center items-center content-center">
             <div className='animate__animated animate__jackInTheBox'>
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             </div>
@@ -201,7 +210,7 @@ function Home(){
                     data-placement="bottom"
                     title="nam-t24"
                 >
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                 </a>
                 <a 
                     href="https://www.linkedin.com/in/namtruongcs/"
@@ -212,7 +221,7 @@ function Home(){
                     title="namtruongcs"
                     className = "mx-6"
                 >
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                 </a>
                 <a 
                     href="mailto:namtruong831@gmail.com"
@@ -222,22 +231,21 @@ function Home(){
                     data-placement="bottom"
                     title="namtruong831@gmail.com"
                 >
-                    <i class="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
         {/* About Section */}
-        {/* <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center"> */}
         <div className = "about">
             <div className="flex justify-center">
                 <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3" data-wow-offset="100">
                     {/* md:my-40 my-32 */}
                     <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                     <div>
-                        <p3 className="lg:text-lg md:text-md text-sm">
+                        <p className="lg:text-lg md:text-base text-sm">
                             My name is Nam Truong and I am a second year student from the University of Texas
                             at Dallas studying computer science. I created this site to not only
-                            highlight my work and accomplishments but to exhibit my growth and
+                            highlight my work and accomplishments but to exhibit my
                             development within computer science.
                             <br />
                             <br />
@@ -259,12 +267,24 @@ function Home(){
                             <br />
                             <br />
                             When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
-                            testing my typing speed on{" "}
-                            <a href="https://typings.gg/" className="underline" target="-blank">
-                              typings.gg
-                            </a>
-                            , and eating mint chocolate chip ice cream :)
-                        </p3>
+                            hiking, and eating mint chocolate chip ice cream :)
+                        </p>
+                    </div>
+                    {/* accordion section */}
+                    <div className='w-full my-4'>
+                        <button className="accordion lg:w-2/5 md:w-1/2 w-3/5 text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
+                        <div className="panel lg:w-2/5 md:w-1/2 w-3/5 px-2 lg:text-base text-sm">
+                            <ul className='list-disc list-inside'>
+                                <li className=''>The Narrows - Zion Nat. Park, Utah</li>
+                                <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
+                                <li className=''>Devil's Garden - Arches Nat. Park, Utah</li>
+                                <li className=''>Navajo Loop - Bryce Canyon Nat. Park, Utah</li>
+                                <li className=''>Grinnell Glacier - Glacier Nat. Park, Montana</li>
+                                <li className=''>Sky Pond - Rocky Mt. Nat. Park, Colorado</li>
+                                <li className=''>High Dune - Great Sand Dunes Nat. Park, Colorado</li>
+                                <li className=''>Garfield Peak - Crater Lake Nat. Park, Oregon</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,7 +363,7 @@ function Home(){
                 </div>
                 <div className="md:text-3xl text-2xl mt-4 mb-2 text-center">Other Projects</div>
                 <div className = "flex justify-center">
-                    <Link to="/projecttimeline" className="md:text-lg text-md text-center">
+                    <Link to="/projecttimeline" className="md:text-lg text-base text-center">
                         <p className = "timelineLink md:pb-3 pb-4">➣ view the timeline</p>
                     </Link>
                 </div>
