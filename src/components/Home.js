@@ -46,33 +46,21 @@ function Home(){
 
     document.documentElement.style.setProperty('--animate-duration', '1.8s');
 
-    //fade out
+    //fade in/out
     $(document).ready(function(){
         $(window).scroll(function(){
             $("#socials").css("opacity", 1 - $(window).scrollTop() / (500));
-        });
-    });
-
-    //fade in
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            //bottom socials
             $("#socials_bottom").css("opacity", $(window).scrollTop() / (250));
 
-            //tools and tech
-            // if($('#toolsNtech').length){
-            //     //checks that the div has been loaded and is present
-            //     var distance = $('#toolsNtech').offset().top - $(window).scrollTop();
-            //     $("#toolsNtech").css("opacity", 1 - distance/325 + 0.9);
-            // }
-
             //project
-            var projectList = document.querySelectorAll(".project");
+            // var projectList = document.querySelectorAll(".project");
 
-            for(const project of projectList){
-                var projectDistance = Math.pow(project.getBoundingClientRect().top, 1.5);
-                project.style.opacity = (1 - projectDistance/6500 + 0.99);
-            }
+            // for(const project of projectList){
+            //     var projectDistance = Math.pow(project.getBoundingClientRect().top, 1.5);
+            //     project.style.opacity = (1 - projectDistance/6500 + 0.99);
+            //     project.classList.add("wow");
+            //     project.classList.add("flipInX");
+            // }
         });
     });
 
@@ -242,7 +230,7 @@ function Home(){
         {/* <div className="about bg-gradient-to-b from-PastelPink to-white flex justify-center"> */}
         <div className = "about">
             <div className="flex justify-center">
-                <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3 wow slideInLeft" data-wow-offset="100">
+                <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3" data-wow-offset="100">
                     {/* md:my-40 my-32 */}
                     <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                     <div>
@@ -282,7 +270,7 @@ function Home(){
             </div>
             {/* Tools and Technologies Section */}
             <div className="flex justify-center mt-8 ">
-                <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4 wow slideInRight" data-wow-offset="100">
+                <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4 wow fadeInUp" data-wow-offset="150">
                     <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
                     <div className="icons flex flex-wrap justify-center">
                         <img src={CPP} alt="c++" className="smallIcon"></img>
@@ -315,42 +303,42 @@ function Home(){
                         pic={CookAlong}
                         title="CookAlong"
                         description="Digital sous chef web application for ACM Projects Fall 2020. First place project winner"
-                        className = "project"
+                        className = "project wow"
                     />
                     <ProjectCard
                         path="https://github.com/KendalUTD/GamerJamProject"
                         pic={Tobor}
                         title="Tobor's Treasure Troph"
                         description="3D Puzzle and adventure game created through Unity for HackUTD GameJam 2020"
-                        className = "project"
+                        className = "project wow"
                     />
                     <ProjectCard
                         path="https://github.com/KevinCai319/TAMUHacks2021"
                         pic={Minos}
                         title="Minos' Quest"
                         description="Real-time multiplayer tile based labrynth game using Processing for TAMUHack 2021"
-                        className = "project"
+                        className = "project wow"
                     />
                     <ProjectCard
                         path="https://github.com/acmutd/hackutd-vii-site"
                         pic={HackUTDVII}
                         title="HackUTD VII"
                         description="Developed HackUTD VII event site with a team of HackUTD technical officers for Spring HackUTD 2021"
-                        className = "project"
+                        className = "project wow"
                     />
                     <ProjectCard
                         path="https://github.com/zzeneric/Blink"
                         pic={Blink}
                         title="Blink"
                         description="Real-time video conference platform that mimics an engaging classroom environment using integrated activities for HackDFW 2021"
-                        className = "project"
+                        className = "project wow"
                     />
                     <ProjectCard
                         path="https://github.com/acmutd/hackportal-hackutd"
                         pic={HackUTDVIII}
                         title="HackUTD VIII"
                         description="Developed HackUTD VIII event site with a team of HackUTD technical officers for Fall HackUTD 2021"
-                        className = "project"
+                        className = "project wow"
                     />
                 </div>
                 <div className="md:text-3xl text-2xl mt-4 mb-2 text-center">Other Projects</div>
