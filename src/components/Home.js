@@ -33,6 +33,7 @@ import Minos from '../images/Minos.png';
 import Blink from '../images/blink.png';
 import HackUTDVIII from '../images/hackutdVIII.png';
 import HackUTDVII from '../images/hackutdVII.png';
+import HackPortal from '../images/HackPortal.png';
 
 smoothscroll.polyfill();
 function Home(){
@@ -42,6 +43,7 @@ function Home(){
         typewriter();
         $("#socials_bottom").css("opacity", 0);
         new WOW().init();
+        accordion();
     })
     
     document.documentElement.style.setProperty('--animate-duration', '1.8s');
@@ -112,13 +114,12 @@ function Home(){
     }
     // End typewriter
 
-    //accordion
-    window.onload = () => {
+    const accordion = () =>{
         var acc = document.getElementsByClassName("accordion");
         var i;
-
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
+                console.log("clicked");
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
@@ -272,8 +273,8 @@ function Home(){
                     </div>
                     {/* accordion section */}
                     <div className='w-full my-4'>
-                        <button className="accordion lg:w-2/5 md:w-1/2 w-3/5 text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
-                        <div className="panel lg:w-2/5 md:w-1/2 w-3/5 px-2 lg:text-base text-sm">
+                        <button className="accordion md:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
+                        <div className="panel md:w-1/2 w-full px-2 lg:text-base text-sm">
                             <ul className='list-disc list-inside'>
                                 <li className=''>The Narrows - Zion Nat. Park, Utah</li>
                                 <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
@@ -358,6 +359,13 @@ function Home(){
                         pic={HackUTDVIII}
                         title="HackUTD VIII"
                         description="Developed HackUTD VIII event site with a team of HackUTD technical officers for Fall HackUTD 2021"
+                        className = "project wow"
+                    />
+                    <ProjectCard
+                        path="https://github.com/acmutd/hackportal"
+                        pic={HackPortal}
+                        title="HackPortal"
+                        description="Hackathon event management platform aimed at assisting hackathon organizers and hackers nationwide"
                         className = "project wow"
                     />
                 </div>

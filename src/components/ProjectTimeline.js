@@ -32,7 +32,7 @@ function ProjectTimeline(){
                           title="HackPortal"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -53,7 +53,7 @@ function ProjectTimeline(){
                           title="HackUTD VIII"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">Event website for the 8th iteration of HackUTD, utilizing parts of HackPortal. Reached 800+ hackathon users and 1000+ applicants.</p>
@@ -71,7 +71,7 @@ function ProjectTimeline(){
                           title="MindReaderGame"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -91,7 +91,7 @@ function ProjectTimeline(){
                           title="Blink"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -113,7 +113,7 @@ function ProjectTimeline(){
                           title="AppAcademy"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -133,7 +133,7 @@ function ProjectTimeline(){
                           title="Chess"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -153,7 +153,7 @@ function ProjectTimeline(){
                           title="Minesweeper"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -173,7 +173,7 @@ function ProjectTimeline(){
                           title="Minos'Quest"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -193,7 +193,7 @@ function ProjectTimeline(){
                           title="HackUTD VII"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">Event website for the 7th iteration of HackUTD. Used plain html, css, js. </p>
@@ -211,7 +211,7 @@ function ProjectTimeline(){
                           title="Typer"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">Site to test typing speed using quotes API generator to generate text. Features light and pastel theme options. Used plain html, css, js.</p>
@@ -229,7 +229,7 @@ function ProjectTimeline(){
                           title="CookAlong"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">
@@ -249,7 +249,7 @@ function ProjectTimeline(){
                           title="PersonalSiteV1"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">Very first site I've created. Purpose was to learn about web development and React.</p>
@@ -267,7 +267,7 @@ function ProjectTimeline(){
                           title="Tobor's Treasure Troph"
                           className = "githubIcon mx-3"
                         >
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                       </div>
                       <p className = "projectDesc">3D puzzle and adventure game created through Unity.</p>
@@ -288,7 +288,7 @@ function ProjectTimeline(){
                 title="nam-t24"
                 className = "socialIcon"
               >
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
               <a 
                 href="https://www.linkedin.com/in/namtruongcs/"
@@ -299,7 +299,7 @@ function ProjectTimeline(){
                 title="namtruongcs"
                 className = "mx-6 socialIcon"
               >
-                <i class="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
               <a 
                 href="mailto:namtruong831@gmail.com"
@@ -310,7 +310,7 @@ function ProjectTimeline(){
                 title="namtruong831@gmail.com"
                 className = "socialIcon"
               >
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
               </a>
             </div>
           </div>
