@@ -44,7 +44,7 @@ function Home(){
         $("#socials_bottom").css("opacity", 0);
         new WOW().init();
         accordion();
-    })
+    });
     
     document.documentElement.style.setProperty('--animate-duration', '1.8s');
 
@@ -114,7 +114,7 @@ function Home(){
     }
     // End typewriter
 
-    const accordion = () =>{
+    const accordion = () => {
         var acc = document.getElementsByClassName("accordion");
         var i;
         for (i = 0; i < acc.length; i++) {
