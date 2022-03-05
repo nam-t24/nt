@@ -26,6 +26,7 @@ import Rails from '../images/icons/rails.png';
 import Git from '../images/icons/git.png';
 import VSCode from '../images/icons/vscode.png';
 import Terminal from '../images/icons/terminal.png';
+import Firebase from '../images/icons/firebase.png';
 //project images
 import CookAlong from '../images/CookAlong.png';
 import Tobor from '../images/tobor.jpg';
@@ -302,6 +303,7 @@ function Home(){
                         <img src={HTML} alt="html" className="smallIcon"></img>
                         <img src={CSS} alt="css" className="smallIcon"></img>
                         <img src={Tailwind} alt="tailwindcss" className="largeIcon"></img>
+                        <img src={Firebase} alt="firebase" className="smallIcon"></img>
                         <img src={SQL} alt="sql" className="smallIcon"></img>
                         <img src={react} alt="react" className="smallIcon"></img>
                         <img src={NextJS} alt="nextjs" className="largeIcon"></img>
