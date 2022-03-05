@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nt/static/css/main.e452c13f.chunk.css",
-    "main.js": "/nt/static/js/main.0b3fba20.chunk.js",
-    "main.js.map": "/nt/static/js/main.0b3fba20.chunk.js.map",
+    "main.js": "/nt/static/js/main.b844e988.chunk.js",
+    "main.js.map": "/nt/static/js/main.b844e988.chunk.js.map",
     "runtime-main.js": "/nt/static/js/runtime-main.552b1368.js",
     "runtime-main.js.map": "/nt/static/js/runtime-main.552b1368.js.map",
     "static/css/2.96b26686.chunk.css": "/nt/static/css/2.96b26686.chunk.css",
@@ -24,6 +24,7 @@
     "static/media/blink.bf081828.png": "/nt/static/media/blink.bf081828.png",
     "static/media/c++.6e731ebc.svg": "/nt/static/media/c++.6e731ebc.svg",
     "static/media/css.60bd5075.png": "/nt/static/media/css.60bd5075.png",
+    "static/media/firebase.6f1a1b33.png": "/nt/static/media/firebase.6f1a1b33.png",
     "static/media/Resume.css": "/nt/static/media/greenbackdrop.2eb37930.png",
     "static/media/hackutdVII.f935fdc0.png": "/nt/static/media/hackutdVII.f935fdc0.png",
     "static/media/hackutdVIII.8bbd157f.png": "/nt/static/media/hackutdVIII.8bbd157f.png",
@@ -46,6 +47,6 @@
     "static/css/2.96b26686.chunk.css",
     "static/js/2.31b0eb82.chunk.js",
     "static/css/main.e452c13f.chunk.css",
-    "static/js/main.0b3fba20.chunk.js"
+    "static/js/main.b844e988.chunk.js"
   ]
 }
