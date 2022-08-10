@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nt/static/css/main.e452c13f.chunk.css",
-    "main.js": "/nt/static/js/main.38556870.chunk.js",
-    "main.js.map": "/nt/static/js/main.38556870.chunk.js.map",
+    "main.css": "/nt/static/css/main.d252d0d6.chunk.css",
+    "main.js": "/nt/static/js/main.c7fe0ef0.chunk.js",
+    "main.js.map": "/nt/static/js/main.c7fe0ef0.chunk.js.map",
     "runtime-main.js": "/nt/static/js/runtime-main.552b1368.js",
     "runtime-main.js.map": "/nt/static/js/runtime-main.552b1368.js.map",
     "static/css/2.96b26686.chunk.css": "/nt/static/css/2.96b26686.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.29f87813.chunk.js.map": "/nt/static/js/3.29f87813.chunk.js.map",
     "index.html": "/nt/index.html",
     "static/css/2.96b26686.chunk.css.map": "/nt/static/css/2.96b26686.chunk.css.map",
-    "static/css/main.e452c13f.chunk.css.map": "/nt/static/css/main.e452c13f.chunk.css.map",
+    "static/css/main.d252d0d6.chunk.css.map": "/nt/static/css/main.d252d0d6.chunk.css.map",
     "static/js/2.31b0eb82.chunk.js.LICENSE.txt": "/nt/static/js/2.31b0eb82.chunk.js.LICENSE.txt",
     "static/media/CookAlong.68fa7a65.png": "/nt/static/media/CookAlong.68fa7a65.png",
     "static/media/HackPortal.980ce96c.png": "/nt/static/media/HackPortal.980ce96c.png",
     "static/media/Minos.f02888c0.png": "/nt/static/media/Minos.f02888c0.png",
     "static/media/N.222b5199.png": "/nt/static/media/N.222b5199.png",
-    "static/media/NamTruong_Resume.b2e55f2a.jpg": "/nt/static/media/NamTruong_Resume.b2e55f2a.jpg",
-    "static/media/NamTruong_Resume.bc578698.pdf": "/nt/static/media/NamTruong_Resume.bc578698.pdf",
+    "static/media/NamTruong_Resume.61ae1b27.jpg": "/nt/static/media/NamTruong_Resume.61ae1b27.jpg",
+    "static/media/NamTruong_Resume.a5608353.pdf": "/nt/static/media/NamTruong_Resume.a5608353.pdf",
     "static/media/Home.css": "/nt/static/media/backdrop2.ca126136.png",
     "static/media/blink.bf081828.png": "/nt/static/media/blink.bf081828.png",
     "static/media/c++.6e731ebc.svg": "/nt/static/media/c++.6e731ebc.svg",
@@ -46,7 +46,7 @@
     "static/js/runtime-main.552b1368.js",
     "static/css/2.96b26686.chunk.css",
     "static/js/2.31b0eb82.chunk.js",
-    "static/css/main.e452c13f.chunk.css",
-    "static/js/main.38556870.chunk.js"
+    "static/css/main.d252d0d6.chunk.css",
+    "static/js/main.c7fe0ef0.chunk.js"
   ]
 }
