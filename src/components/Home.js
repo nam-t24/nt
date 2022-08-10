@@ -137,14 +137,14 @@ function Home(){
         <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div>
         <Navbar/>
         {/* Home screen for lg screens */}
-        <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex-row items-center content-center">
-            <div className="flex flex-col ml-16 w-1/2">
-                <h1 id = "fadein" className="text-7xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
+        <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex-row items-center content-center ">
+            <div className="flex flex-col ml-16 w-1/2 2xl:w-3/5">
+                <h1 id = "fadein" className="text-7xl 2xl:text-9xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
                 {/* Typewriter Section */}
                 <p>
                     <span
                         data-period="1500"
-                        className="typewrite typeBlink text-3xl"
+                        className="typewrite typeBlink text-3xl 2xl:text-4xl"
                         data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern @ StateFarm","Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'
                     ></span>
                 </p>
@@ -186,7 +186,7 @@ function Home(){
                 </div>
             </div>
             <div className='animate__animated animate__jackInTheBox'>
-                <img alt="ProfilePicture" src={PFP} className = "PFP w-64 border-2 border-white"/>
+                <img alt="ProfilePicture" src={PFP} className = "PFP w-64 2xl:w-80 border-2 border-white"/>
             </div>
 
         </div>
