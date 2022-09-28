@@ -41,6 +41,26 @@ function ProjectTimeline(){
                       </p>
                     </li>
                     <li className='list'>
+                      <div className="time">2022</div>
+                      <div className="projectTitle">
+                        HackUTD IX Website
+                        <a
+                          href="https://github.com/acmutd/hackutd-ix-site"
+                          target="_blank"
+                          rel="noreferrer"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="HackUTD IX"
+                          className = "githubIcon mx-3"
+                        >
+                            <i className="fab fa-github"></i>
+                        </a>
+                      </div>
+                      <p className = "projectDesc">
+                        Event website for the 9th iteration of HackUTD, utilizing parts of HackPortal. Reached 1000+ applicants.
+                      </p>
+                    </li>
+                    <li className='list'>
                       <div className="time">2021</div>
                       <div className="projectTitle">
                         HackUTD VIII Website

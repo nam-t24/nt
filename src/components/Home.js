@@ -27,6 +27,9 @@ import Git from '../images/icons/git.png';
 import VSCode from '../images/icons/vscode.png';
 import Terminal from '../images/icons/terminal.png';
 import Firebase from '../images/icons/firebase.png';
+import Python from '../images/icons/python.png'
+import Terraform from '../images/icons/terraform.png'
+import AWS from '../images/icons/aws.png'
 //project images
 import CookAlong from '../images/CookAlong.png';
 import Tobor from '../images/tobor.jpg';
@@ -35,6 +38,7 @@ import Blink from '../images/blink.png';
 import HackUTDVIII from '../images/hackutdVIII.png';
 import HackUTDVII from '../images/hackutdVII.png';
 import HackPortal from '../images/HackPortal.png';
+import HackUTDIX from '../images/hackutdIX.png'
 
 smoothscroll.polyfill();
 function Home(){
@@ -198,7 +202,7 @@ function Home(){
             <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4 animate__animated animate__zoomIn">Nam Truong</h1>
             {/* Typewriter Section */}
             <p>
-            <span className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Incoming SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
+            <span className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ex-SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
                 
             </span>
             </p>
@@ -244,11 +248,11 @@ function Home(){
                     {/* md:my-40 my-32 */}
                     <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
                     <div>
-                        <p className="lg:text-lg md:text-base text-sm">
+                        <p className="2xl:text-xl lg:text-lg md:text-base text-sm">
                             My name is Nam Truong and I am a second year student from the University of Texas
                             at Dallas studying computer science. I created this site to not only
                             highlight my work and accomplishments but to exhibit my
-                            development within computer science.
+                            growth within computer science.
                             <br />
                             <br />
                             Currently, I am involved in the{" "}
@@ -269,7 +273,7 @@ function Home(){
                             <br />
                             <br />
                             When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
-                            hiking, and eating mint chocolate chip ice cream :)
+                            hiking, and creating latte art :)
                         </p>
                     </div>
                     {/* accordion section */}
@@ -295,19 +299,22 @@ function Home(){
                 <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4 wow fadeInUp" data-wow-offset="150">
                     <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
                     <div className="icons flex flex-wrap justify-center">
-                        <img src={CPP} alt="c++" className="smallIcon"></img>
+                        <img src={Python} alt="python" className="smallIcon"></img>
                         <img src={Java} alt="java" className="smallIcon"></img>
-                        <img src={Ruby} alt="ruby" className="smallIcon"></img>
                         <img src={JS} alt="javascript" className="smallIcon"></img>
                         <img src={TS} alt="typescript" className="smallIcon"></img>
+                        <img src={CPP} alt="c++" className="smallIcon"></img>
+                        <img src={Ruby} alt="ruby" className="smallIcon"></img>
                         <img src={HTML} alt="html" className="smallIcon"></img>
                         <img src={CSS} alt="css" className="smallIcon"></img>
                         <img src={Tailwind} alt="tailwindcss" className="largeIcon"></img>
-                        <img src={Firebase} alt="firebase" className="smallIcon"></img>
-                        <img src={SQL} alt="sql" className="smallIcon"></img>
                         <img src={react} alt="react" className="smallIcon"></img>
                         <img src={NextJS} alt="nextjs" className="largeIcon"></img>
                         <img src={Rails} alt="rubyonrails" className="largeIcon"></img>
+                        <img src={Firebase} alt="firebase" className="smallIcon"></img>
+                        <img src={SQL} alt="sql" className="smallIcon"></img>
+                        <img src={Terraform} alt="terraform" className="smallIcon"></img>
+                        <img src={AWS} alt="aws" className="smallIcon"></img>
                         <img src={Git} alt="git" className="smallIcon"></img>
                         <img src={VSCode} alt="vscode" className="smallIcon"></img>
                         <img src={Terminal} alt="terminal" className="smallIcon"></img>
@@ -368,6 +375,13 @@ function Home(){
                         pic={HackPortal}
                         title="HackPortal"
                         description="Hackathon event management platform aimed at assisting hackathon organizers and hackers nationwide"
+                        className = "project wow"
+                    />
+                    <ProjectCard
+                        path="https://github.com/acmutd/hackutd-ix-site"
+                        pic={HackUTDIX}
+                        title="HackUTD IX"
+                        description="Developed HackUTD IX event site with a team of HackUTD technical officers for Fall HackUTD 2022"
                         className = "project wow"
                     />
                 </div>
