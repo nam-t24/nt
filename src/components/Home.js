@@ -141,9 +141,9 @@ function Home(){
         <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div>
         <Navbar/>
         {/* Home screen for lg screens */}
-        <div className="lg:flex hidden min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex-row items-center content-center ">
+        <div className="lg:flex hidden min-h-screen hero flex-row items-center content-center text-white">
             <div className="flex flex-col ml-16 w-1/2 2xl:w-3/5">
-                <h1 id = "fadein" className="text-7xl 2xl:text-9xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
+                <h1 id = "fadein" className="font-semibold text-7xl 2xl:text-9xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
                 {/* Typewriter Section */}
                 <p>
                     <span
@@ -320,6 +320,28 @@ function Home(){
                         <img src={Terminal} alt="terminal" className="smallIcon"></img>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className='flex justify-center bg-DarkSlateGrey'>
+            <div className='md:w-3/5 w-4/5 my-12 bg-white rounded-md p-8'>
+                <h1 className="md:text-4xl text-3xl textGradient font-black mb-4">Experience</h1>
+                <div className='flex justify-between'>
+                    <p className='font-semibold md:text-2xl text-xl'>State Farm</p>
+                    <p className='md:text-xl text-lg'>May 2022 - Aug 2022</p>
+                </div>
+                <p className='md:text-xl text-lg'>Software Engineering Intern, Research and Development Team</p>
+                <ul className='list-disc list-outside md:text-xl text-lg my-2'>
+                    <li>
+                        Designed and constructed an internal State Farm GitLab web scraper to extract repositories/issues pertaining to Research & Development
+                    </li>
+                    <li>
+                        Deployed scraper process within AWS Lambda, SQS, and S3 and implemented AWS infrastructure using Terraform
+                    </li>
+                    <li>
+                        Increased runtime efficiency of scraping 4000+ repositories by 80% by integrating the GitLab API and AWS SQS queues
+                    </li>
+                </ul>
+                <div className='md:text-xl text-lg'>Technologies Used: Python, GitLab API, AWS Lambda, AWS SQS, AWS S3, Terraform</div>
             </div>
         </div>
         {/* Projects Section */}
