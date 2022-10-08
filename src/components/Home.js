@@ -141,9 +141,9 @@ function Home(){
         <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div>
         <Navbar/>
         {/* Home screen for lg screens */}
-        <div className="lg:flex hidden min-h-screen hero flex-row items-center content-center text-white">
+        <div className="lg:flex hidden min-h-screen bg-[#FDFCFF] flex-row items-center content-center">
             <div className="flex flex-col ml-16 w-1/2 2xl:w-3/5">
-                <h1 id = "fadein" className="font-semibold text-7xl 2xl:text-9xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
+                <h1 id = "fadein" className="font-semibold text-7xl 2xl:text-8xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
                 {/* Typewriter Section */}
                 <p>
                     <span
@@ -195,11 +195,11 @@ function Home(){
 
         </div>
         {/* Home screen for sm-md screens */}
-        <div className="lg:hidden inline min-h-screen bg-gradient-to-b from-HookersGreen to-AshGrey flex flex-col justify-center items-center content-center">
+        <div className="lg:hidden inline min-h-screen bg-[#FDFCFF] flex flex-col justify-center items-center content-center">
             <div className='animate__animated animate__jackInTheBox'>
             <img alt="ProfilePicture" src={PFP} className = "PFP sm:w-56 w-40 border-2 border-white"/>
             </div>
-            <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4 animate__animated animate__zoomIn">Nam Truong</h1>
+            <h1 className="md:text-5xl text-2xl text-center md:my-4 mb-1 mt-4 animate__animated animate__zoomIn font-semibold">Nam Truong</h1>
             {/* Typewriter Section */}
             <p>
             <span className="md:text-2xl text-lg typewrite typeBlink" data-period="1000" data-type='["Student at the University of Texas at Dallas", "B.S. in Computer Science", "Ex-SWE Intern at StateFarm", "Ardent Explorer and Hiker","Casual Volleyball Player", "Açaí Enthusiast", "Thanks for reading!"]'>
@@ -242,62 +242,58 @@ function Home(){
             </div>
         </div>
         {/* About Section */}
-        <div className = "about">
-            <div className="flex justify-center">
-                <div className="aboutText md:mb-20 mb-16 mt-16 md:w-3/5 w-4/5 flex flex-col items-center justify-center p-3" data-wow-offset="100">
-                    {/* md:my-40 my-32 */}
-                    <h1 id="about" className="md:text-4xl text-3xl my-4">Howdy!</h1>
-                    <div>
-                        <p className="2xl:text-xl lg:text-lg md:text-base text-sm">
-                            My name is Nam Truong and I am a second year student from the University of Texas
-                            at Dallas studying computer science. I created this site to not only
-                            highlight my work and accomplishments but to exhibit my
-                            growth within computer science.
-                            <br />
-                            <br />
-                            Currently, I am involved in the{" "}
-                            <a href="https://www.acmutd.co/index.html" className="underline" target="-blank">
-                              Association for Computing Machinery
-                            </a>
-                            , having participated in its{" "}
-                            <a href="https://www.acmutd.co/projects" className="underline" target="-blank">
-                              projects
-                            </a>{" "}
-                            division, and now part of the{" "}
-                            <a href="https://www.hackutd.co/" className="underline" target="-blank">
-                              HackUTD
-                            </a>{" "}
-                            division. After participating in my first hackathon, I became a
-                            technical officer for HackUTD to help organize and enrich the experience
-                            of the many new students who decide to partake in HackUTD in the future.
-                            <br />
-                            <br />
-                            When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
-                            hiking, and creating latte art :)
-                        </p>
-                    </div>
+        <div className = "bg-[#1a1c1e] py-24">
+            <div id="about" className='flex justify-center items-center wow fadeInUp' data-wow-offset="100">
+                <h1 className="md:text-8xl text-3xl font-bold howdy mr-12 py-2">Howdy!</h1>
+                <div className='bg-[#FDFCFF] w-1/2 p-8 rounded-lg text-[#334155] blueBoxShadow'>
+                    <p className="2xl:text-2xl lg:text-xl md:text-base text-sm font-medium">
+                        My name is Nam Truong and I am a second year student from the University of Texas
+                        at Dallas studying computer science. I created this site to not only
+                        highlight my work and accomplishments but to exhibit my
+                        growth within computer science.
+                        <br />
+                        <br />
+                        Currently, I am involved in the{" "}
+                        <a href="https://www.acmutd.co/index.html" className="underline" target="-blank">
+                        Association for Computing Machinery
+                        </a>
+                        , having participated in its{" "}
+                        <a href="https://www.acmutd.co/projects" className="underline" target="-blank">
+                        projects
+                        </a>{" "}
+                        division, and now part of the{" "}
+                        <a href="https://www.hackutd.co/" className="underline" target="-blank">
+                        HackUTD
+                        </a>{" "}
+                        division. After participating in my first hackathon, I became a
+                        technical officer for HackUTD to help organize and enrich the experience
+                        of the many new students who decide to partake in HackUTD in the future.
+                        <br />
+                        <br />
+                        When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
+                        hiking, and creating latte art :)
+                    </p>
                     {/* accordion section */}
-                    <div className='w-full my-4'>
-                        <button className="accordion md:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
-                        <div className="panel md:w-1/2 w-full px-2 lg:text-base text-sm">
-                            <ul className='list-disc list-inside'>
-                                <li className=''>The Narrows - Zion Nat. Park, Utah</li>
-                                <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
-                                <li className=''>Devil's Garden - Arches Nat. Park, Utah</li>
-                                <li className=''>Navajo Loop - Bryce Canyon Nat. Park, Utah</li>
-                                <li className=''>Grinnell Glacier - Glacier Nat. Park, Montana</li>
-                                <li className=''>Sky Pond - Rocky Mt. Nat. Park, Colorado</li>
-                                <li className=''>High Dune - Great Sand Dunes Nat. Park, Colorado</li>
-                                <li className=''>Garfield Peak - Crater Lake Nat. Park, Oregon</li>
-                            </ul>
+                        <div className='w-full my-4'>
+                            <button className="accordion md:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
+                            <div className="panel md:w-1/2 w-full px-2 lg:text-base text-sm">
+                                <ul className='list-disc list-inside'>
+                                    <li className=''>The Narrows - Zion Nat. Park, Utah</li>
+                                    <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
+                                    <li className=''>Devil's Garden - Arches Nat. Park, Utah</li>
+                                    <li className=''>Navajo Loop - Bryce Canyon Nat. Park, Utah</li>
+                                    <li className=''>Grinnell Glacier - Glacier Nat. Park, Montana</li>
+                                    <li className=''>Sky Pond - Rocky Mt. Nat. Park, Colorado</li>
+                                    <li className=''>High Dune - Great Sand Dunes Nat. Park, Colorado</li>
+                                    <li className=''>Garfield Peak - Crater Lake Nat. Park, Oregon</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
-            {/* Tools and Technologies Section */}
-            <div className="flex justify-center mt-8 ">
-                <div id = "toolsNtech" className="toolsNtech md:w-3/5 w-4/5 border-2 mb-32 rounded-lg border-OldLavender flex flex-col items-center p-4 wow fadeInUp" data-wow-offset="150">
-                    <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Tools and Technologies</h1>
+
+            <div className='flex justify-center items-center wow fadeInUp mt-32' data-wow-offset="100">
+                <div id = "toolsNtech" className="toolsNtech bg-[#FDFCFF] w-1/3 rounded-lg flex flex-col items-center p-12 purpleBoxShadow">
                     <div className="icons flex flex-wrap justify-center">
                         <img src={Python} alt="python" className="smallIcon"></img>
                         <img src={Java} alt="java" className="smallIcon"></img>
@@ -320,7 +316,9 @@ function Home(){
                         <img src={Terminal} alt="terminal" className="smallIcon"></img>
                     </div>
                 </div>
+                    <h1 id="about" className="md:text-8xl text-3xl font-bold technologies ml-12 py-2">Technologies</h1>
             </div>
+
         </div>
         <div className='flex justify-center bg-DarkSlateGrey'>
             <div className='md:w-3/5 w-4/5 my-12 bg-white rounded-md p-8'>

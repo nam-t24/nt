@@ -164,7 +164,8 @@
 }
 
 .about {
-  background-color: transparent;
+  background: rgb(23,18,31);
+background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, rgba(25,4,46,1) 100%);
 }
 
 .absoluteBackground {
@@ -180,14 +181,14 @@
 }
 
 .accordion {
-  color: #444;
+  color: rgb(56, 56, 56);
   cursor: pointer;
   transition: 0.4s;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 .active, .accordion:hover {
-  background-color: rgba(152, 211, 165, 0.6);
+  background-color: rgba(#4EA8DE);
 }
 
 .panel {
@@ -195,6 +196,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  color: rgb(56, 56, 56);
 }
 
 .accordion:after {
@@ -218,4 +220,29 @@
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+.howdy {
+  background: #5390D9;
+background: linear-gradient(to right, #5390D9 0%, #72EFDD 77%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.technologies {
+  background: #7400B8;
+background: linear-gradient(to right, #7400B8 0%, #6930C3 12%, #4EA8DE 57%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.blueBoxShadow {
+  box-shadow:
+    15px 0 40px 1px #72EFDD; /* outer cyan */
+}
+
+.purpleBoxShadow {
+  box-shadow:
+    -15px 0 40px 1px #6930C3; /* outer cyan */
 }
