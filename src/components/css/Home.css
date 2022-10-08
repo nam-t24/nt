@@ -60,6 +60,16 @@
   .icons > img {
     margin: 4px 8px;
   }
+
+  .blueBoxShadow {
+    box-shadow:
+      5px 0 35px 0px #72EFDD !important;
+  }
+
+  .purpleBoxShadow {
+    box-shadow:
+      -5px 0 35px 0px #6930C3 !important;
+  }
 }
 
 @media only screen and (max-width: 640px){
@@ -73,6 +83,16 @@
   }
   .icons > img {
     margin: 4px 8px;
+  }
+
+  .blueBoxShadow {
+    box-shadow:
+      5px 0 35px 0px #72EFDD !important;
+  }
+
+  .purpleBoxShadow {
+    box-shadow:
+      -5px 0 35px 0px #6930C3 !important;
   }
 }
 
@@ -124,7 +144,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
   }
 }
 
@@ -134,12 +154,12 @@
     border-color: transparent;
   }
   50% {
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
   }
 }
 
 .typeBlink {
-  border-right: 0.08em solid rgb(255, 255, 255);
+  border-right: 0.08em solid rgb(0, 0, 0);
 }
 
 .typeBlink {
@@ -181,35 +201,28 @@ background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, r
 }
 
 .accordion {
-  color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.4s;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.active, .accordion:hover {
-  background-color: rgba(#4EA8DE);
+  background-color: #5E60CE;
 }
 
 .panel {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(231, 234, 244, 0.7);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  color: rgb(56, 56, 56);
+  color: rgb(71, 71, 71);
 }
 
 .accordion:after {
-  /* + sign  */
-  content: '\02795';
-  font-size: 12px;
-  color: #777;
+  content: '+';
+  font-size: 20px;
   float: right;
 }
 
 .active:after {
-  /* - sign */
-  content: "\2796"; 
+  content: '-';
 }
 
 .textGradient {
@@ -224,25 +237,34 @@ background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, r
 
 .howdy {
   background: #5390D9;
-background: linear-gradient(to right, #5390D9 0%, #72EFDD 77%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #5390D9 0%, #72EFDD 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .technologies {
   background: #7400B8;
-background: linear-gradient(to right, #7400B8 0%, #6930C3 12%, #4EA8DE 57%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #7400B8 0%, #6930C3 12%, #4EA8DE 57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
 
-.blueBoxShadow {
-  box-shadow:
-    15px 0 40px 1px #72EFDD; /* outer cyan */
+.blueGlow {
+  background: rgb(114, 239, 221);
+  background: radial-gradient(ellipse, rgba(114, 239, 220, 0.509) 0%, rgba(25,4,46,0) 70%);
 }
 
+.purpleGlow {
+  background: rgb(105, 48, 195);
+  background: radial-gradient(ellipse, rgba(105, 48, 195, 0.509) 0%, rgba(25,4,46,0) 70%);
+}
 .purpleBoxShadow {
   box-shadow:
-    -15px 0 40px 1px #6930C3; /* outer cyan */
+    -15px 0 40px -5px #6930C3;
+}
+
+.softGlow {
+  background: rgb(107,60,182);
+  background: radial-gradient(circle, rgba(94, 96, 206, 0.28) 0%, rgba(25,4,46,0) 70%);
 }

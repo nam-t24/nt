@@ -8,7 +8,7 @@ import './css/Resume.css';
 function Resume(){
 
     return(
-        <div className = "resumeSection">
+        <div className = "bg-[#222324]">
             {/* Header */}
             <div className="p-4 flex items-center">
                 <Link to="/" className = "sm:ml-16 ml-6">

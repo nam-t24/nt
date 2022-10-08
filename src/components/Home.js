@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard.js';
 import smoothscroll from 'smoothscroll-polyfill';
 import { Link } from "react-router-dom";
 import $ from 'jquery';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import 'animate.css';
 import WOW from 'wow.js';
 //icons
@@ -42,7 +42,6 @@ import HackUTDIX from '../images/hackutdIX.png'
 
 smoothscroll.polyfill();
 function Home(){
-    
     //refresh on page load
     useEffect(() => {
         typewriter();
@@ -124,7 +123,6 @@ function Home(){
         var i;
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                console.log("clicked");
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
@@ -138,14 +136,15 @@ function Home(){
 
     return(
         <>
-        <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div>
+        {/* <div className="absoluteBackground fixed top-0 left-0 min-w-screen min-h-screen"></div> */}
         <Navbar/>
         {/* Home screen for lg screens */}
         <div className="lg:flex hidden min-h-screen bg-[#FDFCFF] flex-row items-center content-center">
-            <div className="flex flex-col ml-16 w-1/2 2xl:w-3/5">
-                <h1 id = "fadein" className="font-semibold text-7xl 2xl:text-8xl my-6 fadein animate__animated animate__fadeInDown">Nam Truong</h1>
+            <div className="flex flex-col ml-16 w-1/2 2xl:w-3/5 relative">
+                <div className='2xl:w-[60rem] 2xl:h-[60rem] w-[45rem] h-[45rem] rounded-full absolute top-1/2 2xl:left-8 left-0 -translate-y-1/2 -translate-x-1/2 softGlow z-0'></div>
+                <h1 id = "fadein" className="font-semibold text-7xl 2xl:text-8xl my-6 fadein animate__animated animate__fadeInDown z-10">Nam Truong</h1>
                 {/* Typewriter Section */}
-                <p>
+                <p className='z-10'>
                     <span
                         data-period="1500"
                         className="typewrite typeBlink text-3xl 2xl:text-4xl"
@@ -190,7 +189,7 @@ function Home(){
                 </div>
             </div>
             <div className='animate__animated animate__jackInTheBox'>
-                <img alt="ProfilePicture" src={PFP} className = "PFP w-64 2xl:w-80 border-2 border-white"/>
+                <img alt="ProfilePicture" src={PFP} className = "PFP w-64 2xl:w-96 border-2 border-white"/>
             </div>
 
         </div>
@@ -242,81 +241,89 @@ function Home(){
             </div>
         </div>
         {/* About Section */}
-        <div className = "bg-[#1a1c1e] py-24">
-            <div id="about" className='flex justify-center items-center wow fadeInUp' data-wow-offset="100">
-                <h1 className="md:text-8xl text-3xl font-bold howdy mr-12 py-2">Howdy!</h1>
-                <div className='bg-[#FDFCFF] w-1/2 p-8 rounded-lg text-[#334155] blueBoxShadow'>
-                    <p className="2xl:text-2xl lg:text-xl md:text-base text-sm font-medium">
-                        My name is Nam Truong and I am a second year student from the University of Texas
-                        at Dallas studying computer science. I created this site to not only
-                        highlight my work and accomplishments but to exhibit my
-                        growth within computer science.
-                        <br />
-                        <br />
-                        Currently, I am involved in the{" "}
-                        <a href="https://www.acmutd.co/index.html" className="underline" target="-blank">
-                        Association for Computing Machinery
-                        </a>
-                        , having participated in its{" "}
-                        <a href="https://www.acmutd.co/projects" className="underline" target="-blank">
-                        projects
-                        </a>{" "}
-                        division, and now part of the{" "}
-                        <a href="https://www.hackutd.co/" className="underline" target="-blank">
-                        HackUTD
-                        </a>{" "}
-                        division. After participating in my first hackathon, I became a
-                        technical officer for HackUTD to help organize and enrich the experience
-                        of the many new students who decide to partake in HackUTD in the future.
-                        <br />
-                        <br />
-                        When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
-                        hiking, and creating latte art :)
-                    </p>
-                    {/* accordion section */}
-                        <div className='w-full my-4'>
-                            <button className="accordion md:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
-                            <div className="panel md:w-1/2 w-full px-2 lg:text-base text-sm">
-                                <ul className='list-disc list-inside'>
-                                    <li className=''>The Narrows - Zion Nat. Park, Utah</li>
-                                    <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
-                                    <li className=''>Devil's Garden - Arches Nat. Park, Utah</li>
-                                    <li className=''>Navajo Loop - Bryce Canyon Nat. Park, Utah</li>
-                                    <li className=''>Grinnell Glacier - Glacier Nat. Park, Montana</li>
-                                    <li className=''>Sky Pond - Rocky Mt. Nat. Park, Colorado</li>
-                                    <li className=''>High Dune - Great Sand Dunes Nat. Park, Colorado</li>
-                                    <li className=''>Garfield Peak - Crater Lake Nat. Park, Oregon</li>
-                                </ul>
+        <div id="about" className = "bg-[#1a1c1e] xl:py-48 py-24">
+            <div className='flex lg:flex-row flex-col justify-center items-center wow fadeInRight' data-wow-offset="100">
+                <h1 className="xl:text-8xl text-6xl font-bold howdy lg:mr-12 mr-0 py-2 lg:mb-0 mb-8">Howdy!</h1>
+                <div name="wrapper" className='z-10 lg:w-1/2 w-11/12'>
+                    <div className='bg-[#FDFCFF] w-full p-8 rounded-lg text-[#334155] relative'>
+                        {/* Glow */}
+                        <div className='xl:w-[70rem] xl:h-[45rem] lg:w-[40rem] lg:h-[45rem] w-[40rem] h-[30rem] absolute blueGlow z-[-1] right-16 top-1/2 -translate-y-1/2 translate-x-1/3'></div>
+                        <p className="2xl:text-2xl lg:text-xl md:text-base text-sm font-medium z-10">
+                            My name is Nam Truong and I am a second year student from the University of Texas
+                            at Dallas studying computer science. I created this site to not only
+                            highlight my work and accomplishments but to exhibit my
+                            growth within computer science.
+                            <br />
+                            <br />
+                            Currently, I am involved in the{" "}
+                            <a href="https://www.acmutd.co/index.html" className="underline" target="-blank">
+                            Association for Computing Machinery
+                            </a>
+                            , having participated in its{" "}
+                            <a href="https://www.acmutd.co/projects" className="underline" target="-blank">
+                            projects
+                            </a>{" "}
+                            division, and now part of the{" "}
+                            <a href="https://www.hackutd.co/" className="underline" target="-blank">
+                            HackUTD
+                            </a>{" "}
+                            division. After participating in my first hackathon, I became a
+                            technical officer for HackUTD to help organize and enrich the experience
+                            of the many new students who decide to partake in HackUTD in the future.
+                            <br />
+                            <br />
+                            When I'm not coding or learning, I enjoy weight training, playing guitar and volleyball,
+                            hiking, and creating latte art :)
+                        </p>
+                        {/* accordion section */}
+                            <div className='w-full my-4'>
+                                <button className="accordion flex justify-between text-white font-semibold  xl:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
+                                <div className="panel md:w-1/2 w-full px-2 lg:text-base text-sm rounded-b-md">
+                                    <ul className='list-disc list-inside'>
+                                        <li className=''>The Narrows - Zion Nat. Park, Utah</li>
+                                        <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
+                                        <li className=''>Devil's Garden - Arches Nat. Park, Utah</li>
+                                        <li className=''>Navajo Loop - Bryce Canyon Nat. Park, Utah</li>
+                                        <li className=''>Grinnell Glacier - Glacier Nat. Park, Montana</li>
+                                        <li className=''>Sky Pond - Rocky Mt. Nat. Park, Colorado</li>
+                                        <li className=''>High Dune - Great Sand Dunes Nat. Park, Colorado</li>
+                                        <li className=''>Garfield Peak - Crater Lake Nat. Park, Oregon</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div className='flex justify-center items-center wow fadeInUp mt-32' data-wow-offset="100">
-                <div id = "toolsNtech" className="toolsNtech bg-[#FDFCFF] w-1/3 rounded-lg flex flex-col items-center p-12 purpleBoxShadow">
-                    <div className="icons flex flex-wrap justify-center">
-                        <img src={Python} alt="python" className="smallIcon"></img>
-                        <img src={Java} alt="java" className="smallIcon"></img>
-                        <img src={JS} alt="javascript" className="smallIcon"></img>
-                        <img src={TS} alt="typescript" className="smallIcon"></img>
-                        <img src={CPP} alt="c++" className="smallIcon"></img>
-                        <img src={Ruby} alt="ruby" className="smallIcon"></img>
-                        <img src={HTML} alt="html" className="smallIcon"></img>
-                        <img src={CSS} alt="css" className="smallIcon"></img>
-                        <img src={Tailwind} alt="tailwindcss" className="largeIcon"></img>
-                        <img src={react} alt="react" className="smallIcon"></img>
-                        <img src={NextJS} alt="nextjs" className="largeIcon"></img>
-                        <img src={Rails} alt="rubyonrails" className="largeIcon"></img>
-                        <img src={Firebase} alt="firebase" className="smallIcon"></img>
-                        <img src={SQL} alt="sql" className="smallIcon"></img>
-                        <img src={Terraform} alt="terraform" className="smallIcon"></img>
-                        <img src={AWS} alt="aws" className="smallIcon"></img>
-                        <img src={Git} alt="git" className="smallIcon"></img>
-                        <img src={VSCode} alt="vscode" className="smallIcon"></img>
-                        <img src={Terminal} alt="terminal" className="smallIcon"></img>
+            <div className='flex lg:flex-row flex-col justify-center items-center wow fadeInLeft lg:mt-32 mt-28' data-wow-offset="100">
+                <div name="wrapper" className='z-10 lg:w-1/3 w-11/12 lg:order-1 order-2'>
+                    <div id = "toolsNtech" className="toolsNtech bg-[#FDFCFF] w-full rounded-lg flex flex-col items-center lg:p-12 p-8 relative">
+                        {/* Glow */}
+                        <div className='2xl:w-[60rem] 2xl:h-[35rem] lg:w-[50rem] lg:h-[40rem] w-[40rem] h-[30rem] absolute purpleGlow z-[-1] left-12 top-1/2 -translate-y-1/2 -translate-x-1/3'></div>
+                        <div className="icons flex flex-wrap justify-center">
+                            <img src={Python} alt="python" className="smallIcon"></img>
+                            <img src={Java} alt="java" className="smallIcon"></img>
+                            <img src={JS} alt="javascript" className="smallIcon"></img>
+                            <img src={TS} alt="typescript" className="smallIcon"></img>
+                            <img src={CPP} alt="c++" className="smallIcon"></img>
+                            <img src={Ruby} alt="ruby" className="smallIcon"></img>
+                            <img src={HTML} alt="html" className="smallIcon"></img>
+                            <img src={CSS} alt="css" className="smallIcon"></img>
+                            <img src={Tailwind} alt="tailwindcss" className="largeIcon"></img>
+                            <img src={react} alt="react" className="smallIcon"></img>
+                            <img src={NextJS} alt="nextjs" className="largeIcon"></img>
+                            <img src={Rails} alt="rubyonrails" className="largeIcon"></img>
+                            <img src={Firebase} alt="firebase" className="smallIcon"></img>
+                            <img src={SQL} alt="sql" className="smallIcon"></img>
+                            <img src={Terraform} alt="terraform" className="smallIcon"></img>
+                            <img src={AWS} alt="aws" className="smallIcon"></img>
+                            <img src={Git} alt="git" className="smallIcon"></img>
+                            <img src={VSCode} alt="vscode" className="smallIcon"></img>
+                            <img src={Terminal} alt="terminal" className="smallIcon"></img>
+                        </div>
                     </div>
                 </div>
-                    <h1 id="about" className="md:text-8xl text-3xl font-bold technologies ml-12 py-2">Technologies</h1>
+                <h1 id="about" className="xl:text-8xl text-6xl font-bold technologies lg:ml-12 ml-0 py-2 lg:mb-0 mb-8 lg:order-2 order-1">Technologies</h1>
             </div>
 
         </div>

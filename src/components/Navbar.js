@@ -11,6 +11,7 @@ function Navbar(){
     const yOffset = -60; 
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
+    // scroll={el => scrollWithOffset(el)}
 
     return(
         <div className = "bg-[#FDFCFF] flex justify-between items-center py-4">
@@ -18,7 +19,7 @@ function Navbar(){
                 <img alt="HomeButton" src={HomeButton} className = "sm:w-12 w-10"/>
             </Link>
             <div id="MenuItems" className = "sm:mr-16 mr-6 flex items-center md:text-xl text-sm">
-                <LinkHash smooth={true} to="#about" className="MenuHover" scroll={el => scrollWithOffset(el)}>
+                <LinkHash smooth={true} to="#about" className="MenuHover">
                     About
                 </LinkHash>
                 <LinkHash smooth={true} to="#projects" className="MenuHover md:mx-20 sm:mx-12 mx-6">
