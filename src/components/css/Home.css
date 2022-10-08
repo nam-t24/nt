@@ -225,15 +225,6 @@ background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, r
   content: '-';
 }
 
-.textGradient {
-  background-image: linear-gradient(45deg, #3b7d50, #83da9e);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
 
 .howdy {
   background: #5390D9;
@@ -247,6 +238,20 @@ background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, r
   background: linear-gradient(to right, #7400B8 0%, #6930C3 12%, #4EA8DE 57%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.experience {
+  background: #FC466B;
+background: linear-gradient(to right, #FC466B 0%, #3F5EFB 80%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.experienceBorder {
+  background: rgb(63,94,251);
+background: -moz-linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
+background: -webkit-linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
+background: linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
 
 }
 
@@ -258,10 +263,6 @@ background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, r
 .purpleGlow {
   background: rgb(105, 48, 195);
   background: radial-gradient(ellipse, rgba(105, 48, 195, 0.509) 0%, rgba(25,4,46,0) 70%);
-}
-.purpleBoxShadow {
-  box-shadow:
-    -15px 0 40px -5px #6930C3;
 }
 
 .softGlow {
