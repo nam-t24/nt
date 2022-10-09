@@ -2,7 +2,7 @@ import React from 'react';
 import './css/ProjectTimeline.css';
 import './css/ProjectTimeline.scss';
 import { Link } from "react-router-dom";
-import HomeButton from '../images/N.png';
+import HomeButton from '../images/N_white.png';
 
 function ProjectTimeline(){
 
@@ -298,7 +298,7 @@ function ProjectTimeline(){
               
             </div>
             {/* Socials Section */}
-            <div className = "text-3xl pb-4 z-50 flex justify-center">
+            <div className = "text-3xl pb-4 z-50 flex justify-center text-white">
               <a
                 href="https://github.com/nam-t24"
                 target="_blank"

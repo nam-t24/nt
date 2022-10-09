@@ -1,8 +1,13 @@
 .timelinePage {
   /* background: rgb(109,104,117);
   background: linear-gradient(45deg, rgba(109,104,117,1) 0%, rgba(229,152,155,1) 45%, rgba(255,205,178,1) 100%); */
-  background: #2F3E46;
-  background: linear-gradient(45deg, #2F3E46 0%, #52796F 35%, #CAD2C5 100%);
+  /* background: #2F3E46;
+  background: linear-gradient(45deg, #2F3E46 0%, #52796F 35%, #CAD2C5 100%); */
+  background: rgb(35,37,38);
+background: -moz-linear-gradient(146deg, rgba(35,37,38,1) 35%, rgba(65,67,69,1) 63%);
+background: -webkit-linear-gradient(146deg, rgba(35,37,38,1) 35%, rgba(65,67,69,1) 63%);
+background: linear-gradient(146deg, rgba(35,37,38,1) 35%, rgba(65,67,69,1) 63%);
+
 }
 
 .githubIcon {

@@ -354,9 +354,9 @@ function Home(){
             </div>
         </div>
         {/* Projects Section */}
-        <div id="projects" className="min-h-screen bg-DarkSeaGreen flex flex-col justify-center items-center">
-            <div className="md:w-4/5 w-11/12 my-8">
-                <h1 className="md:text-4xl text-3xl md:mb-4 mb-2 text-center">Projects</h1>
+        <div id="projects" className="min-h-screen bg-[#FDFCFF] flex flex-col justify-center items-center">
+            <div className="xl:w-4/6 md:w-4/5 w-full lg:my-32 md:my-24 bg-[#040d21] py-16 px-4 md:rounded-xl">
+                <h1 className="lg:text-8xl text-7xl projects font-black mb-8 text-center py-2">Projects</h1>
                 {/* Project Cards */}
                 <div className="w-full flex flex-wrap justify-center">
                     <ProjectCard
@@ -416,9 +416,16 @@ function Home(){
                         className = "project wow"
                     />
                 </div>
-                <div className="md:text-3xl text-2xl mt-4 mb-2 text-center">Other Projects</div>
+                <div className="mt-16 mb-2 text-white text-center lg:text-6xl md:text-5xl text-4xl font-bold">
+                    <p className='inline'>
+                        Checkout the rest of my&nbsp;
+                    </p>
+                    <p className='projectsSub pb-2 inline'>
+                        projects
+                    </p>
+                </div>
                 <div className = "flex justify-center">
-                    <Link to="/projecttimeline" className="md:text-lg text-base text-center">
+                    <Link to="/projecttimeline" className="md:text-2xl text-lg text-center">
                         <p className = "timelineLink md:pb-3 pb-4">➣ view the timeline</p>
                     </Link>
                 </div>
@@ -426,8 +433,8 @@ function Home(){
         </div>
         
         {/* Copyright footer */}
-        <div className="w-full bg-DarkSeaGreen flex justify-center">
-            <div className="copyright w-3/5 border-t-1 border-Charcoal text-center text-xs p-2">
+        <div className="w-full md:bg-[#FDFCFF] bg-[#040d21] flex justify-center md:text-black text-white">
+            <div className="copyright w-3/5 border-t-1 md:border-Charcoal border-white text-center text-xs p-2">
                 © 2021 Nam Truong
             </div>
         </div>

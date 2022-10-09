@@ -106,13 +106,16 @@
 
 .project {
   transition: transform .2s;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .project:hover {
   transform: translatey(-6px);
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
   background-color: rgba(255, 255, 255, 1);
+  -moz-box-shadow: 5 10 20px -3px rgb(210, 212, 214);
+  -webkit-box-shadow: 5 10 20px -3px rgb(210, 212, 214);
+  box-shadow: 5px 10px 20px -3px rgb(210, 212, 214);
 }
 
 
@@ -242,16 +245,30 @@ background: linear-gradient(177deg, rgba(23,18,31,1) 36%, rgba(27,5,46,1) 74%, r
 
 .experience {
   background: #FC466B;
-background: linear-gradient(to right, #FC466B 0%, #3F5EFB 80%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #FC466B 0%, #3F5EFB 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .experienceBorder {
   background: rgb(63,94,251);
-background: -moz-linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
-background: -webkit-linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
-background: linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
+  background: -moz-linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
+  background: -webkit-linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
+  background: linear-gradient(141deg, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 100%);
+}
+
+.projects {
+  background: #E1EEC3;
+background: linear-gradient(to right, #E1EEC3 17%, #F05053 89%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.projectsSub {
+  background: #FFE259;
+background: linear-gradient(to right, #FFE259 17%, #ffa751 89%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
 }
 
