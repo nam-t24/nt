@@ -241,7 +241,7 @@ function Home(){
             </div>
         </div>
         {/* About Section */}
-        <div id="about" className = "bg-[#1a1c1e] 2xl:py-48 lg:py-32 py-24">
+        <div id="about" className = "bg-[#1a1c1e] 2xl:py-48 lg:py-32 py-24 overflow-x-hidden overflow-y-hidden">
             <div className='flex lg:flex-row flex-col justify-center items-center wow fadeInRight' data-wow-offset="100">
                 <h1 className="xl:text-8xl text-6xl font-bold howdy lg:mr-12 mr-0 py-2 lg:mb-0 mb-8">Howdy!</h1>
                 <div name="wrapper" className='z-10 lg:w-1/2 w-11/12'>
@@ -323,22 +323,22 @@ function Home(){
                         </div>
                     </div>
                 </div>
-                <h1 id="about" className="xl:text-8xl text-6xl font-bold technologies lg:ml-12 ml-0 py-2 lg:mb-0 mb-8 lg:order-2 order-1">Technologies</h1>
+                <h1 id="about" className="xl:text-8xl text-5xl font-bold technologies lg:ml-12 ml-0 py-2 lg:mb-0 mb-8 lg:order-2 order-1">Technologies</h1>
             </div>
         </div>
         {/* Experience Section */}
         <div className='bg-[#141414] 2xl:py-32 md:py-20 py-16'>
-            <h1 className="lg:text-8xl text-7xl experience font-black mb-4 text-center">Experience</h1>
+            <h1 className="lg:text-8xl md:text-7xl text-6xl experience font-black mb-4 text-center">Experience</h1>
             {/* border */}
-            <div className='md:w-3/5 w-4/5 lg:my-12 my-6 rounded-md mx-auto experienceBorder lg:pt-8 lg:pl-8 pt-6 pl-6'>
+            <div className='md:w-3/5 w-4/5 lg:my-12 my-6 rounded-md mx-auto experienceBorder lg:pt-8 lg:pl-8 md:pt-6 md:pl-6 pt-4 pl-4'>
                 {/* actual content */}
                 <div className='w-full h-full bg-white rounded-tl-md rounded-br-md md:p-8 p-6'>
                     <div className='flex justify-between'>
                         <p className='font-semibold xl:text-4xl md:text-3xl text-xl'>State Farm</p>
-                        <p className='xl:text-2xl md:text-xl text-lg'>May 2022 - Aug 2022</p>
+                        <p className='xl:text-2xl md:text-xl text-sm'>May 2022 - Aug 2022</p>
                     </div>
-                    <p className='xl:text-2xl md:text-xl text-lg'>Software Engineering Intern, Research and Development Team</p>
-                    <ul className='list-disc list-outside xl:text-2xl md:text-xl text-lg my-2'>
+                    <p className='xl:text-2xl md:text-xl text-sm'>Software Engineering Intern, Research and Development Team</p>
+                    <ul className='list-disc list-outside xl:text-2xl md:text-xl text-sm my-2'>
                         <li>
                             Designed and constructed an internal State Farm GitLab web scraper to extract repositories/issues pertaining to Research & Development
                         </li>
@@ -349,7 +349,7 @@ function Home(){
                             Increased runtime efficiency of scraping 4000+ repositories by 80% by integrating the GitLab API and AWS SQS queues
                         </li>
                     </ul>
-                    <div className='xl:text-2xl md:text-xl text-lg'>Technologies Used: Python, GitLab API, AWS Lambda, AWS SQS, AWS S3, Terraform</div>
+                    <div className='xl:text-2xl md:text-xl text-sm'>Technologies Used: Python, GitLab API, AWS Lambda, AWS SQS, AWS S3, Terraform</div>
                 </div>
             </div>
         </div>
