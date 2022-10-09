@@ -4,8 +4,8 @@ import './css/Home.css';
 
 function Footer(){
     return(
-        <div id="socials_bottom" className="socials_bottom fixed bottom-0 flex justify-between items-center w-full md:p-4 p-1 md:text-black text-white">
-            <div className="socials_left flex lg:flex-row flex-col md:mx-0 mx-3">
+        <div id="socials_bottom" className="socials_bottom fixed bottom-0 flex justify-end items-center w-full md:p-4 p-1 md:text-black text-white">
+            {/* <div className="socials_left flex lg:flex-row flex-col md:mx-0 mx-3">
                 <a
                     href="https://github.com/nam-t24"
                     target="_blank"
@@ -39,7 +39,7 @@ function Footer(){
                 >
                     <i className="fas fa-envelope"></i>
                 </a>
-            </div>
+            </div> */}
             <LinkHash 
                 to="#top"
                 smooth={true}

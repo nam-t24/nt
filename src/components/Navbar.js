@@ -25,7 +25,7 @@ function Navbar(){
                 <LinkHash smooth={true} to="#projects" className="MenuHover md:mx-20 sm:mx-12 mx-6">
                     Projects
                 </LinkHash>
-                <Link to="/resume" className="font-semibold bg-[#5E60CE] hover:bg-[#5254B4] text-white rounded-md md:py-2 sm:py-1 md:px-4 px-2">
+                <Link to="/resume" className="font-semibold bg-[#5E60CE] hover:bg-[#5254B4] text-white rounded-md md:py-2 sm:py-1 md:px-4 px-4 py-2">
                     Resume
                 </Link>
             </div>

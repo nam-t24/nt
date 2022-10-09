@@ -279,7 +279,7 @@ background: linear-gradient(to right, #FFE259 17%, #ffa751 89%);
 
 .purpleGlow {
   background: rgb(105, 48, 195);
-  background: radial-gradient(ellipse, rgba(105, 48, 195, 0.509) 0%, rgba(25,4,46,0) 70%);
+  background: radial-gradient(ellipse, rgba(104, 48, 195, 0.728) 0%, rgba(25, 4, 46, 0) 70%);
 }
 
 .softGlow {
