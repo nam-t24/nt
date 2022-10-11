@@ -277,8 +277,8 @@ function Home(){
                         </p>
                         {/* accordion section */}
                             <div className='w-full my-4'>
-                                <button className="accordion flex justify-between text-white font-semibold  xl:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
-                                <div className="panel md:w-1/2 w-full px-2 lg:text-base text-sm rounded-b-md">
+                                <button className="accordion flex justify-between text-white font-semibold 2xl:w-1/2 lg:w-3/4 md:w-1/2 w-full text-left p-2 lg:text-lg md:text-base text-sm">Hiking Trails Bucket List</button>
+                                <div className="panel 2xl:w-1/2 lg:w-3/4 md:w-1/2 w-full px-2 lg:text-base text-sm rounded-b-md">
                                     <ul className='list-disc list-inside'>
                                         <li className=''>The Narrows - Zion Nat. Park, Utah</li>
                                         <li className=''>Angel's Landing - Zion Nat. Park, Utah</li>
@@ -327,12 +327,12 @@ function Home(){
             </div>
         </div>
         {/* Experience Section */}
-        <div className='bg-[#141414] 2xl:py-32 md:py-20 py-16'>
+        <div className='bg-[#141414] 2xl:py-32 md:py-20 py-16 overflow-y-hidden'>
             <h1 className="lg:text-8xl md:text-7xl text-6xl experience font-black mb-4 text-center wow fadeInUp">Experience</h1>
             {/* border */}
-            <div className='md:w-3/5 w-4/5 lg:my-12 my-6 rounded-lg mx-auto experienceBorder lg:pt-8 lg:pl-8 md:pt-6 md:pl-6 pt-4 pl-4 wow fadeInUp'>
+            <div className='md:w-3/5 w-4/5 lg:my-12 my-6 rounded-xl mx-auto experienceBorder lg:pt-8 lg:pl-8 md:pt-6 md:pl-6 pt-4 pl-4 wow fadeInUp'>
                 {/* actual content */}
-                <div className='w-full h-full bg-white rounded-tl-lg rounded-br-lg md:p-8 p-6'>
+                <div className='w-full h-full bg-white rounded-tl-xl rounded-br-xl md:p-8 p-6'>
                     <div className='flex justify-between'>
                         <p className='font-semibold xl:text-4xl md:text-3xl text-xl'>State Farm</p>
                         <p className='xl:text-2xl md:text-xl text-sm'>May 2022 - Aug 2022</p>
@@ -355,7 +355,7 @@ function Home(){
         </div>
         {/* Projects Section */}
         <div id="projects" className="min-h-screen bg-[#FDFCFF] flex flex-col justify-center items-center">
-            <div className="md:w-11/12 w-full lg:my-28 md:my-24 bg-[#040d21] py-16 px-4 md:rounded-xl">
+            <div className="md:w-11/12 w-full md:my-20 bg-[#040d21] py-16 px-4 md:rounded-xl">
                 <h1 className="lg:text-8xl text-7xl projects font-black mb-8 text-center py-2">Projects</h1>
                 {/* Project Cards */}
                 <div className="w-full flex flex-wrap justify-center">
