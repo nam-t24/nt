@@ -43,6 +43,27 @@ function ProjectTimeline(){
                     <li className='list'>
                       <div className="time">2022</div>
                       <div className="projectTitle">
+                        SimpliFarm
+                        <a
+                          href="https://github.com/raghavpillai/SimpliFarm"
+                          target="_blank"
+                          rel="noreferrer"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="SimpliFarm"
+                          className = "githubIcon mx-3"
+                        >
+                            <i className="fab fa-github"></i>
+                        </a>
+                      </div>
+                      <p className = "projectDesc">
+                          Constructed a machine learning application that calculates optimal water and fertilization usage for farmers.
+                          Utilizes Firebase and Weather & Google APIs to store user data and obtain data.
+                      </p>
+                    </li>
+                    <li className='list'>
+                      <div className="time">2022</div>
+                      <div className="projectTitle">
                         HackUTD IX Website
                         <a
                           href="https://github.com/acmutd/hackutd-ix-site"

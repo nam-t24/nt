@@ -274,15 +274,19 @@ background: linear-gradient(to right, #FFE259 17%, #ffa751 89%);
 
 .blueGlow {
   background: rgb(114, 239, 221);
-  background: radial-gradient(ellipse, rgba(114, 239, 220, 0.509) 0%, rgba(25,4,46,0) 70%);
+  background: radial-gradient(ellipse, rgba(98, 205, 237, 0.846) 0%,rgba(98, 205, 237, 0.334) 30%, rgba(25,4,46,0) 70%);
 }
 
 .purpleGlow {
   background: rgb(105, 48, 195);
-  background: radial-gradient(ellipse, rgba(104, 48, 195, 0.728) 0%, rgba(25, 4, 46, 0) 70%);
+  background: radial-gradient(ellipse, rgba(104, 48, 195, 0.457) 0%, rgba(25, 4, 46, 0) 70%);
 }
 
 .softGlow {
   background: rgb(107,60,182);
   background: radial-gradient(circle, rgba(94, 96, 206, 0.28) 0%, rgba(25,4,46,0) 70%);
+}
+
+.howdyGlow {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(255, 255, 255, 0.07) 0px 2px 4px, #ffffff12 0px 4px 8px, rgba(255, 255, 255, 0.07) 0px 8px 16px, rgba(255, 255, 255, 0.07) 0px 16px 32px, rgba(255, 255, 255, 0.07) 0px 32px 64px;
 }

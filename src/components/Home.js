@@ -39,6 +39,7 @@ import HackUTDVIII from '../images/hackutdVIII.png';
 import HackUTDVII from '../images/hackutdVII.png';
 import HackPortal from '../images/HackPortal.png';
 import HackUTDIX from '../images/hackutdIX.png'
+import SimpliFarm from '../images/SimpliFarm.png'
 
 smoothscroll.polyfill();
 function Home(){
@@ -247,7 +248,7 @@ function Home(){
                 <div name="wrapper" className='z-10 lg:w-1/2 w-11/12'>
                     <div className='bg-[#FDFCFF] w-full p-8 rounded-lg text-[#334155] relative'>
                         {/* Glow */}
-                        <div className='xl:w-[70rem] xl:h-[45rem] lg:w-[40rem] lg:h-[45rem] w-[40rem] h-[30rem] absolute blueGlow z-[-1] right-16 top-1/2 -translate-y-1/2 translate-x-1/3'></div>
+                        <div className='2xl:w-[70rem] 2xl:h-[45rem] xl:w-[40rem] xl:h-[40rem] lg:w-[35rem] lg:h-[40rem] w-[40rem] h-[30rem] absolute blueGlow z-[-1] right-16 top-1/2 -translate-y-1/2 translate-x-1/3'></div>
                         <p className="2xl:text-2xl lg:text-xl md:text-base text-sm font-medium z-10">
                             My name is Nam Truong and I am a second year student from the University of Texas
                             at Dallas studying computer science. I created this site to not only
@@ -330,15 +331,15 @@ function Home(){
         <div className='bg-[#141414] 2xl:py-32 md:py-20 py-16 overflow-y-hidden'>
             <h1 className="lg:text-8xl md:text-7xl text-6xl experience font-black mb-4 text-center wow fadeInUp">Experience</h1>
             {/* border */}
-            <div className='md:w-3/5 w-4/5 lg:my-12 my-6 rounded-xl mx-auto experienceBorder lg:pt-8 lg:pl-8 md:pt-6 md:pl-6 pt-4 pl-4 wow fadeInUp'>
+            <div className='xl:w-3/5 w-4/5 lg:my-12 my-6 rounded-xl mx-auto experienceBorder lg:pt-8 lg:px-8 md:pt-6 md:px-6 pt-4 px-4 wow fadeInUp'>
                 {/* actual content */}
-                <div className='w-full h-full bg-white rounded-tl-xl rounded-br-xl md:p-8 p-6'>
+                <div className='w-full h-full bg-[#FDFCFF] rounded-t-xl md:p-8 p-6'>
                     <div className='flex justify-between'>
                         <p className='font-semibold xl:text-4xl md:text-3xl text-xl'>State Farm</p>
-                        <p className='xl:text-2xl md:text-xl text-sm'>May 2022 - Aug 2022</p>
+                        <p className='xl:text-2xl md:text-xl text-sm text-[#334155]'>May 2022 - Aug 2022</p>
                     </div>
-                    <p className='xl:text-2xl md:text-xl text-sm'>Software Engineering Intern, Research and Development Team</p>
-                    <ul className='list-disc list-outside xl:text-2xl md:text-xl text-sm my-2'>
+                    <p className='xl:text-2xl md:text-xl text-sm text-[#334155]'>Software Engineering Intern, Research and Development Team</p>
+                    <ul className='list-disc list-outside xl:text-2xl md:text-xl text-sm my-2 text-[#334155]'>
                         <li>
                             Designed and constructed an internal State Farm GitLab web scraper to extract repositories/issues pertaining to Research & Development
                         </li>
@@ -349,13 +350,13 @@ function Home(){
                             Increased runtime efficiency of scraping 4000+ repositories by 80% by integrating the GitLab API and AWS SQS queues
                         </li>
                     </ul>
-                    <div className='xl:text-2xl md:text-xl text-sm'>Technologies Used: Python, GitLab API, AWS Lambda, AWS SQS, AWS S3, Terraform</div>
+                    <div className='xl:text-2xl md:text-xl text-sm text-[#334155]'>Technologies Used: Python, GitLab API, AWS Lambda, AWS SQS, AWS S3, Terraform</div>
                 </div>
             </div>
         </div>
         {/* Projects Section */}
         <div id="projects" className="min-h-screen bg-[#FDFCFF] flex flex-col justify-center items-center">
-            <div className="md:w-11/12 w-full md:my-20 bg-[#040d21] py-16 px-4 md:rounded-xl">
+            <div className="md:w-11/12 w-full md:my-16 bg-[#040d21] py-16 px-4 md:rounded-xl">
                 <h1 className="lg:text-8xl text-7xl projects font-black mb-8 text-center py-2">Projects</h1>
                 {/* Project Cards */}
                 <div className="w-full flex flex-wrap justify-center">
@@ -364,20 +365,6 @@ function Home(){
                         pic={CookAlong}
                         title="CookAlong"
                         description="Digital sous chef web application for ACM Projects Fall 2020. First place project winner"
-                        className = "project wow"
-                    />
-                    <ProjectCard
-                        path="https://github.com/KendalUTD/GamerJamProject"
-                        pic={Tobor}
-                        title="Tobor's Treasure Troph"
-                        description="3D Puzzle and adventure game created through Unity for HackUTD GameJam 2020"
-                        className = "project wow"
-                    />
-                    <ProjectCard
-                        path="https://github.com/KevinCai319/TAMUHacks2021"
-                        pic={Minos}
-                        title="Minos' Quest"
-                        description="Real-time multiplayer tile based labrynth game using Processing for TAMUHack 2021"
                         className = "project wow"
                     />
                     <ProjectCard
@@ -415,10 +402,17 @@ function Home(){
                         description="Developed HackUTD IX event site with a team of HackUTD technical officers for Fall HackUTD 2022"
                         className = "project wow"
                     />
+                    <ProjectCard
+                        path="https://github.com/raghavpillai/SimpliFarm"
+                        pic={SimpliFarm}
+                        title="SimpliFarm"
+                        description="Constructed a machine learning application to determine optimal water and fertilization usage for farmers"
+                        className = "project wow"
+                    />
                 </div>
                 <div className="mt-16 mb-2 text-white text-center lg:text-6xl md:text-5xl text-4xl font-bold">
                     <p className='inline'>
-                        Checkout the rest of my&nbsp;
+                        Check out the rest of my&nbsp;
                     </p>
                     <p className='projectsSub pb-2 inline'>
                         projects
