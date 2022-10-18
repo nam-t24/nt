@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nt/static/css/main.7a299d53.chunk.css",
-    "main.js": "/nt/static/js/main.ee7ebc08.chunk.js",
-    "main.js.map": "/nt/static/js/main.ee7ebc08.chunk.js.map",
+    "main.js": "/nt/static/js/main.8fc7a5be.chunk.js",
+    "main.js.map": "/nt/static/js/main.8fc7a5be.chunk.js.map",
     "runtime-main.js": "/nt/static/js/runtime-main.552b1368.js",
     "runtime-main.js.map": "/nt/static/js/runtime-main.552b1368.js.map",
     "static/css/2.a1596f27.chunk.css": "/nt/static/css/2.a1596f27.chunk.css",
@@ -18,8 +18,9 @@
     "static/media/HackPortal.980ce96c.png": "/nt/static/media/HackPortal.980ce96c.png",
     "static/media/Minos.f02888c0.png": "/nt/static/media/Minos.f02888c0.png",
     "static/media/N.222b5199.png": "/nt/static/media/N.222b5199.png",
-    "static/media/NamTruong_Resume.61ae1b27.jpg": "/nt/static/media/NamTruong_Resume.61ae1b27.jpg",
-    "static/media/NamTruong_Resume.a5608353.pdf": "/nt/static/media/NamTruong_Resume.a5608353.pdf",
+    "static/media/NamTruong_Resume.56cab874.jpg": "/nt/static/media/NamTruong_Resume.56cab874.jpg",
+    "static/media/NamTruong_Resume.c67c1462.pdf": "/nt/static/media/NamTruong_Resume.c67c1462.pdf",
+    "static/media/SimpliFarm.0ec74df7.png": "/nt/static/media/SimpliFarm.0ec74df7.png",
     "static/media/aws.0f62b303.png": "/nt/static/media/aws.0f62b303.png",
     "static/media/Home.css": "/nt/static/media/backdrop2.ca126136.png",
     "static/media/blink.bf081828.png": "/nt/static/media/blink.bf081828.png",
@@ -51,6 +52,6 @@
     "static/css/2.a1596f27.chunk.css",
     "static/js/2.31b0eb82.chunk.js",
     "static/css/main.7a299d53.chunk.css",
-    "static/js/main.ee7ebc08.chunk.js"
+    "static/js/main.8fc7a5be.chunk.js"
   ]
 }
